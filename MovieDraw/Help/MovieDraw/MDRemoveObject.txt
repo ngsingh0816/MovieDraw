@@ -1,0 +1,33 @@
+<name>MDRemoveObject</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object to add to the scene.</desc>
+	</argument0>
+</type>
+<desc>Removes an object from the scene and updates all the necessary components.</desc>
+<example>
+// Remove some object from the scene
+MDObject* obj = // ...
+MDRemoveObject(obj);
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDSetObjects.txt</path>
+		<name>MDSetObjects(NSArray* objs)</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

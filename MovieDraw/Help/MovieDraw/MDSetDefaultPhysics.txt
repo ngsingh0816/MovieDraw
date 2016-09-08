@@ -1,0 +1,32 @@
+<name>MDSetDefaultPhysics</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>physics</name>
+		<desc>Whether to enable(TRUE) or disable(FALSE) default physics.</desc>
+	</argument0>
+</type>
+<desc>Sets the GLView to use its default physics or not. If this is disabled, there will be no default gravity, movement, or collision detection. The default value is TRUE.</desc>
+<example>
+// Disables physics
+MDSetDefaultPhysics(NO);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setDefaultPhysics.txt</path>
+		<name>- (void) setDefaultPhysics:(BOOL)physics</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

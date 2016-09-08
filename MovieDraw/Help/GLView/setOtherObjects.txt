@@ -1,0 +1,33 @@
+<name>setOtherObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSArray*</type>
+		<name>objs</name>
+		<desc>An array of MDCameras, MDLights, MDParticleEngines, and MDCurves.</desc>
+	</argument0>
+</type>
+<desc>Sets the objects to the desired value. This method automatically calls rebuildShaders.</desc>
+<example>
+GLView* view = //...
+// Removes all other objects
+[ view setOtherObjects:[ NSArray array ] ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/instances.txt</path>
+		<name>- (NSMutableArray*) instances</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/objects.txt</path>
+		<name>- (NSMutableArray*) objects</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/otherObjects.txt</path>
+		<name>- (NSMutableArray*) otherObjects</name>
+	</entry2>
+</see>

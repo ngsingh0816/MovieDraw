@@ -1,0 +1,27 @@
+<name>GetX</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the x component of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the x component of the vector.</desc>
+<example>
+MDVector2 vector = MDVector2Create(5, 0);
+if (vector.GetX() == 5.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/SetX.txt</path>
+		<name>SetX(float xVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(float x, float y)</name>
+	</entry2>
+</see>

@@ -1,0 +1,24 @@
+void main()
+{
+	NSTextField* label = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 15, 300, 100) ];
+	[ label setStringValue:@"There are no settings to configure." ];
+	[ label setEditable:NO ];
+	[ label setDrawsBackground:NO ];
+	[ label setSelectable:NO ];
+	[ label setBezeled:NO ];
+	[ view addSubview:label ];
+}
+
+void move()
+{
+}
+
+void update()
+{
+}
+
+void draw()
+{
+}
+
+@end

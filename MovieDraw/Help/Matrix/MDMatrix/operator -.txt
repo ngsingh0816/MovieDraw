@@ -1,0 +1,33 @@
+<name>operator -</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the two matrices subtracted from each other.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>p</name>
+		<desc>The matrix to subtract from the other matrix.</desc>
+	</argument0>
+</type>
+<desc>Subtracts two matrices from each other.</desc>
+<example>
+MDMatrix matrix = MDMatrixIdentity();
+MDMatrix matrix2 = MDMatrixIdentity();
+MDVector matrix3 = matrix - matrix3;		// Gives a new matrix with all zeroes
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/operator -=.txt</path>
+		<name>operator -=</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator +.txt</path>
+		<name>operator +</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixCreate.txt</path>
+		<name>MDMatrixCreate(MDMatrix matrix)</name>
+	</entry2>
+</see>

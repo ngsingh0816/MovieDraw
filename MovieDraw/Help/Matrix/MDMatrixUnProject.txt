@@ -1,0 +1,60 @@
+<name>MDMatrixUnProject</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the object coordinates for the specified window  coordinates.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>win</name>
+		<desc>The window coordinates, which are the coordinates of the points after they are transformed by the projection and model view matrices and the viewport.</desc>
+	</argument0>
+	<argument1>
+		<type>MDMatrix</type>
+		<name>modelview</name>
+		<desc>The model view matrix.</desc>
+	</argument1>
+	<argument2>
+		<type>MDMatrix</type>
+		<name>projection</name>
+		<desc>The projection matrix.</desc>
+	</argument2>
+	<argument3>
+		<type>int*</type>
+		<name>viewport</name>
+		<desc>The four component integer viewport that can be obtained from glGetIntegerv(GL_VIEWPORT, viewport). It is usually (0, 0, windowWidth, windowHeight).</desc>
+	</argument3>
+</type>
+<desc>This function maps window coordinates to object coordinates. This is helpful because it allows a point on the window to be transformed to a point in three dimensional space.</desc>
+<example>
+MDVector3 windowPoint = //...
+// Sets up the perspective projection matrix
+MDMatrix projection = MDMatrixIdentity();
+MDMatrixSetPerspective(&projection, 45.0, 640.0 / 480.0, 0.1, 100.0);
+// Sets up the camera matrix 
+MDMatrix modelView = MDMatrixIdentity();
+MDMatrixTranslate(&modelView, 0, 0, -10);
+// Retrieves the viewport
+int* viewport;
+glGetIntegerv(GL_VIEWPORT, viewport);
+// Retrieves the depth at that window point location
+glReadPixels(windowPoint.x, windowPoint.y, 1, 1, GL_DEPTH_COMPONENT, GL_FLOAT, &windowPoint.z);
+// Projects object coordinates to window coordinates
+MDVector3 vector = MDMatrixUnProject(windowPoint, modelView, projection, viewport);
+// vector now contains the three dimensional object coordinates that find where the windowPoint was in three dimensional space
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixProject.txt</path>
+		<name>MDMatrixProject(MDVector3 win, MDMatrix modelView, MDMatrix projection, int* viewport)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

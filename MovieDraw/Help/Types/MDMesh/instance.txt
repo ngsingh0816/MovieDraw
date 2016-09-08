@@ -1,0 +1,27 @@
+<name>instance</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDInstance*</type>
+		<desc>The mesh's instance</desc>
+	</return>
+</type>
+<desc>Returns the mesh's instance</desc>
+<example>
+MDMesh* mesh = //...
+MDInstance* inst = [ mesh instance ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/setInstance.txt</path>
+		<name>- (void) setInstance:(MDInstance*)inst</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

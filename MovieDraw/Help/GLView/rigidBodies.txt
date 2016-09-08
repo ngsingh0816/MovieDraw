@@ -1,0 +1,15 @@
+<name>rigidBodies</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>std::vector\<btRigidBody*\>*</type>
+		<desc>The rigid bodies from Bullet Physics.</desc>
+	</return>
+</type>
+<desc>The rigid bodies from Bullet Physics.</desc>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+</see>

@@ -1,0 +1,27 @@
+<name>MDObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of MDObjects of all the objects in a scene.</desc>
+	</return>
+</type>
+<desc>Returns a mutable array of all the objects that are currently loaded. This is the preferred method for accessing these objects.</desc>
+<example>
+// Gets the first object
+MDObject* obj = [ MDObjects() objectAtIndex:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDSetObjects.txt</path>
+		<name>MDSetObjects(NSArray* objs)</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

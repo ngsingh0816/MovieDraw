@@ -1,0 +1,27 @@
+<name>updateFPS</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Called once a second to update the current FPS. If you call this manually, it will mess up the FPS counter for a second.</desc>
+<example>
+GLView* view = //...
+[ view updateFPS ];		// Don't do this
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

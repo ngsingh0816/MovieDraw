@@ -1,0 +1,39 @@
+<name>drawVBO</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int*</type>
+		<name>program</name>
+		<desc>The OpenGL program to draw with</desc>
+	</argument0>
+	<argument1>
+		<type>unsigned int</type>
+		<name>shadowStart</name>
+		<desc>The next available texture after the shadow textures</desc>
+	</argument1>
+</type>
+<desc>Draws the instance normally.</desc>
+<example>
+MDInstance* inst = //...
+unsigned int program = //...
+// Draw the instance
+[ inst drawVBO:&program shadow:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/drawVBOColor.txt</path>
+		<name>- (void) drawVBOColor:(MDVector4)color</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/drawShadowVBO.txt</path>
+		<name>- (void) drawVBOShadowVBO</name>
+	</entry2>
+</see>

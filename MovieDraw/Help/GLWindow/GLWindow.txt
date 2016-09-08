@@ -1,0 +1,23 @@
+<name>GLWindow</name>
+<type>interface</type>
+<desc>A subclass of NSWindow that contains an OpenGL view that allows drawing.</desc>
+<example>
+// Creates a window with a 640 x 480 resolution
+GLWindow* window = [ [ GLWindow alloc ] initWithFrame:NSMakeRect(0, 0, 640, 480) ];
+// Sets up the OpenGL view
+[ window setUpGLView ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/setUpGLView.txt</path>
+		<name>- (void) setUpGLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/updateGL.txt</path>
+		<name>- (void) updateGL</name>
+	</entry2>
+</see>

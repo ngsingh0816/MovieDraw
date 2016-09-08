@@ -1,0 +1,27 @@
+<name>MDSkyboxVisible</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Whether the skybox is visible or not.</desc>
+	</return>
+</type>
+<desc>Returns whether the skybox is visible or not.</desc>
+<example>
+// Gets if the skybox is visible
+BOOL visible = MDSkyboxVisible();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetSkyboxVisible.txt</path>
+		<name>MDSetSkyboxVisible(BOOL name)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

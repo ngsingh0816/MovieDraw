@@ -1,0 +1,39 @@
+<name>MDSetAngularVelocity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose angular velocity is to be set.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>vel</name>
+		<desc>The velocity to set.</desc>
+	</argument1>
+</type>
+<desc>Sets the object's angular (rotational) velocity. This has no effect if the default physics are not enabled.</desc>
+<example>
+// Set the angular velocity to the right of the object called "One" of "Ball"
+MDSetAngularVelocity(MDObjectWithName(@"One", @"Ball"), MDVector3Create(2, 0, 0));
+// This object will now rotate to the right a little each frame until stopped
+// by a collision or by friction.
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDAngularVelocity.txt</path>
+		<name>MDAngularVelocity(MDObject* obj)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>normalY</name>
+<type>property float</type>
+<desc>The y component of the point's normal.</desc>
+<example>
+MDPoint* point = //...
+// Get the value
+float value = point.normalY;
+// Alternative
+float value = [ point normalY ];
+// Set the value
+point.normalY = 5;
+// Alternative
+[ point setNormalY:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/normalZ.txt</path>
+		<name>normalZ</name>
+	</entry2>
+</see>

@@ -1,0 +1,42 @@
+<name>MDMatrixValue</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the value at the specified row and column.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix</name>
+		<desc>The matrix from which to get the data.</desc>
+	</argument0>
+	<argument1>
+		<type>int</type>
+		<name>row</name>
+		<desc>The row of the value to get.</desc>
+	</argument1>
+	<argument2>
+		<type>int</type>
+		<name>column</name>
+		<desc>The column of the value to get.</desc>
+	</argument2>
+</type>
+<desc>Gets the value at the specified row and column.</desc>
+<example>
+MDMatrix matrix = // ...
+float value = MDMatrixValue(matrix, 0, 2);	// Returns the value at the first row, third column
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixValue .txt</path>
+		<name>MDMatrixValue(MDMatrix matrix, int row, int column, float value)</name>
+	</entry2>
+</see>

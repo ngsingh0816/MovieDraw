@@ -1,0 +1,20 @@
+<name>MDVector4</name>
+<type>struct</type>
+<desc>A vector quantity with four components. This can also be used as a color with the format (red, green, blue, alpha).</desc>
+<example>
+MDVector4 point = MDVector4Create(10, 5, 3, 2);	// Creates the point (10, 5, 3, 2)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4Create.txt</path>
+		<name>MDVector4Create(float x, float y, float z, float w)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry2>
+</see>

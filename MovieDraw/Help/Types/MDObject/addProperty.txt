@@ -1,0 +1,38 @@
+<name>addProperty</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>prop</name>
+		<desc>The value of the property.</desc>
+	</argument0>
+	<argument1>
+		<type>NSString*</type>
+		<name>string</name>
+		<desc>The name of the property.</desc>
+	</argument1>
+</type>
+<desc>Adds a property to the object.</desc>
+<example>
+MDObject* obj1 = //...
+// Add the property of "Red" for "Color"
+[ obj1 addProperty:@"Red" forKey:@"Color" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/properties.txt</path>
+		<name>- (NSMutableArray*) properties</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

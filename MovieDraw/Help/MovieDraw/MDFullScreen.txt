@@ -1,0 +1,27 @@
+<name>MDFullScreen</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Whether the application is fullscreen or not.</desc>
+	</return>
+</type>
+<desc>Returns whether or not the application is full screened.</desc>
+<example>
+// Gets if app is fullscreen
+BOOL full = MDFullScreen();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetFullScreen.txt</path>
+		<name>MDSetFullScreen(BOOL full)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

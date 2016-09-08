@@ -1,0 +1,27 @@
+<name>MDFPS</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The desired frames per second.</desc>
+	</return>
+</type>
+<desc>Returns the desired amount of frames per second.</desc>
+<example>
+// Gets the desired FPS
+unsigned int fps = MDFPS();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetFPS.txt</path>
+		<name>MDSetFPS(unsigned int fps)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

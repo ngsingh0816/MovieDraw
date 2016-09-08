@@ -1,0 +1,27 @@
+<name>defaultPhysics</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns whether the GLView uses its default physics.</desc>
+	</return>
+</type>
+<desc>If this function returns TRUE, then the GLView performs calculations to simulate physics. The default value is TRUE.</desc>
+<example>
+GLView* view = //...
+BOOL anti = [ view defaultPhysics ];		// Returns YES
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setDefaultPhysics.txt</path>
+		<name>- (void) setDefaultPhysics:(BOOL)physics</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>size</name>
+<type>property float</type>
+<desc>The texture's scale (for use with MD_TEXTURE_TERRAIN_DIFFUSE only).</desc>
+<example>
+MDTexture* texture = //...
+// Get the value
+float value = texture.size;
+// Alternative
+float value = [ texture size ];
+// Set the value
+texture.size = 5;
+// Alternative
+[ texture setSize:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDTexture/texture.txt</path>
+		<name>texture</name>
+	</entry2>
+</see>

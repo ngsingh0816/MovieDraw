@@ -1,0 +1,28 @@
+<name>show</name>
+<type>property BOOL</type>
+<desc>Whether the particle system is shown / drawn.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+BOOL value = obj.shown;
+// Alternative
+BOOL value = [ obj shown ];
+// Set the value
+obj.show = TRUE;
+// Alternative
+[ obj setShow:TRUE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/startColor.txt</path>
+		<name>startColor</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

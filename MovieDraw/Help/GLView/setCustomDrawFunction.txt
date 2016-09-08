@@ -1,0 +1,36 @@
+<name>setCustomDrawFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)()</type>
+		<name>drawF</name>
+		<desc>The function to set to.</desc>
+	</argument0>
+</type>
+<desc>Sets a user function that is called during the middle of a frame and can implement its own draw commands.</desc>
+<example>
+void function()
+{
+}
+GLView* view = //...
+// Sets the function
+[ view setCustomDrawFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

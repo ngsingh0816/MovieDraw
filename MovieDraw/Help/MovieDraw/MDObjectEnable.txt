@@ -1,0 +1,32 @@
+<name>MDObjectEnable</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object that will be enabled.</desc>
+	</argument0>
+</type>
+<desc>Enables default physics to act on the object. This is the default state.</desc>
+<example>
+// Enable physics for the "One" object of "Ball"
+MDObjectEnable(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDObjectDisable.txt</path>
+		<name>MDObjectDisable(MDObject* obj)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

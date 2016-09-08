@@ -1,0 +1,27 @@
+<name>MDLoadedScene</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the name of the loaded scene.</desc>
+	</return>
+</type>
+<desc>Returns the name of the loaded scene.</desc>
+<example>
+// Find out the current scene's name
+NSString* name = MDLoadedScene();
+</example>
+<see>
+	<entry0>
+		<path>/GLView/loadedString.txt</path>
+		<name>- (NSString*) loadedString</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

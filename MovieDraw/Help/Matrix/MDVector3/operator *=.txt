@@ -1,0 +1,33 @@
+<name>operator *</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the vector multiplied by a scalar.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>p</name>
+		<desc>The scalar to multiply the vector by.</desc>
+	</argument0>
+</type>
+<desc>Multiplies the vector by a scalar.</desc>
+<example>
+MDVector3 vector = MDVector3Create(5, 2, 1);
+float val = 5;
+vector *= val;		// Gives the vector (25, 10, 5)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/operator *.txt</path>
+		<name>operator *</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3/operator * .txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry2>
+</see>

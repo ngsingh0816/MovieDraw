@@ -1,0 +1,33 @@
+<name>operator /</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns the vector divided by a scalar.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>p</name>
+		<desc>The scalar to divide by.</desc>
+	</argument0>
+</type>
+<desc>Divides a vector by a scalar.</desc>
+<example>
+MDVector2 vector = MDVector2Create(6, 3);
+float val = 3;
+MDVector vector3 = vector / val;		// Gives the vector (2, 1)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/operator *.txt</path>
+		<name>operator *</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/operator /=.txt</path>
+		<name>operator /=</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(float x, float y)</name>
+	</entry2>
+</see>

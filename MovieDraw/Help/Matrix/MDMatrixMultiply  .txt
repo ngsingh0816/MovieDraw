@@ -1,0 +1,53 @@
+<name>MDMatrixMultiply</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the product of a matrix by a vector.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix1</name>
+		<desc>The original matrix.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>x</name>
+		<desc>The x component of the vector to multiply by.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>y</name>
+		<desc>The y component of the vector to multiply by.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>z</name>
+		<desc>The z component of the vector to multiply by.</desc>
+	</argument3>
+	<argument4>
+		<type>float</type>
+		<name>w</name>
+		<desc>The w component of the vector to multiply by.</desc>
+	</argument4>
+</type>
+<desc>Creates and returns a newly created MDMatrix object that is a 4x4 matrix from multiplying a matrix by a vector. This effectively transforms the 4 dimensional point by the matrix. In order to get the final vector position in MovieDraw, you multiply the projection matrix by the model view matrix and then finally by the vector position.</desc>
+<example>
+MDMatrix projectionModelView = // ...
+// Transforms the point (1, 0, -3, 1) by the projection and model view matrices
+MDVector3 position = MDMatrixMultiply(projectionModelView, 1, 0, -3, 1).GetXYZ();
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixCreate.txt</path>
+		<name>MDMatrixCreate(MDMatrix matrix)</name>
+	</entry2>
+</see>

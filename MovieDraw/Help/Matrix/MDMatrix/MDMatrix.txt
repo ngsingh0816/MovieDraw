@@ -1,0 +1,20 @@
+<name>MDMatrix</name>
+<type>struct</type>
+<desc>A 4x4 column major matrix. Column major implies that the first component in the data array is the first row, first column, the second component in the data array is the second row, first column, and so on. MDMatrix is the base object for transformations and can simulate much of OpenGL's previous matrix functionality.</desc>
+<example>
+MDMatrix matrix = MDMatixIdentity();	// Creates the identity matrix
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrixIdentity.txt</path>
+		<name>MDMatrixIdentity()</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixCreate.txt</path>
+		<name>MDMatrixCreate(MDMatrix matrix)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry2>
+</see>

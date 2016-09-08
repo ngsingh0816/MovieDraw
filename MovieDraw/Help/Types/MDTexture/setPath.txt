@@ -1,0 +1,33 @@
+<name>setPath</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>tex</name>
+		<desc>Sets the texture's image path.</desc>
+	</argument0>
+</type>
+<desc>Sets the texture's image path.</desc>
+<example>
+MDTexture* texture = //...
+// Sets the texture's path to the app bundle's "/Images/Image.png"
+[ texture setPath:[ NSString stringWithFormat:@"%@/Images/Image.png", [ [ NSBundle mainBundle ] resourcePath ] ] ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/path.txt</path>
+		<name>- (NSString*) path</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

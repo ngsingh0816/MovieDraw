@@ -1,0 +1,48 @@
+<name>MDMatrixLookAt</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>eyePosition</name>
+		<desc>The eye position or focal point of the viewer.</desc>
+	</argument1>
+	<argument2>
+		<type>MDVector3</type>
+		<name>center</name>
+		<desc>The center or position of the viewer.</desc>
+	</argument2>
+	<argument3>
+		<type>MDVector3</type>
+		<name>up</name>
+		<desc>A vector that specifies the up direction. Usually this is (0, 1, 0).</desc>
+	</argument3>
+</type>
+<desc>Sets up a perspective projection matrix that allows perspective transformations of points in three dimensional space. It simulates a camera with the position of the camera being the center and the focal point of camera being the eyePosition, and up being the orientation. This is similar to gluLookAtf().</desc>
+<example>
+MDMatrix matrix = MDMatrixIdentity();
+// Sets up a perspective projection matrix that looks at (0, 0, -5) from (0, 0, 0)
+MDMatrixLookAt(&matrix, MDVector3Create(0, 0, 0), MDVector3Create(0, 0, -5), MDVector3Create(0, 1, 0));
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixLookAt.txt</path>
+		<name>MDMatrixLookAt(MDMatrix* matrix, float fovy, float aspectRatio, float znear, float zfar)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixSetOrtho.txt</path>
+		<name>MDMatrixSetOrtho(MDMatrix* matrix, float left, float right, float bottom, float top)</name>
+	</entry2>
+</see>

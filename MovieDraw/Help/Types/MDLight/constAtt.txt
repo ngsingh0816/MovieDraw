@@ -1,0 +1,28 @@
+<name>constAtt</name>
+<type>property float</type>
+<desc>The constant attenuation for the light. (Only point and spot lights)</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+float value = obj.constAtt;
+// Alternative
+float value = [ obj constAtt ];
+// Set the value
+obj.constAtt = 0.5;
+// Alternative
+[ obj setConstAtt:0.5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/linAtt.txt</path>
+		<name>linAtt</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

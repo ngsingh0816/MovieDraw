@@ -1,0 +1,32 @@
+<name>MDBoundingBox</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>std::vector\<MDVector3\></type>
+		<desc>The points that make up a rotated rectangle in three dimensional space.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose bounding box will be returned.</desc>
+	</argument0>
+</type>
+<desc>Returns bounding box of an object. It calculates the points of the regular object without rotation, and then rotates those points around the object's midpoint to return the rotated bounding box.</desc>
+<example>
+// Gets the bounding box for the "One" object of "Ball"
+std::vector\<MDVector3\> points = MDBoundingBox(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDRotate.txt</path>
+		<name>MDRotate(MDVector3 point, MDVector3 around, float xrot, float yrot, float zrot)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

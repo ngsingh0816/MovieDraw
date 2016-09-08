@@ -1,0 +1,23 @@
+<name>MDLight</name>
+<type>interface</type>
+<desc>A class that represents a light. There are three different types of light: directional light, point lights and spot lights. Directional lights are like the sun; they seem to be coming from a certain direction, but still illuminate other parts of the scene. Point lights are lights that emit in every direction, and spot lights are point lights but with a restricted emitting angle. These lights have configurable colors, attenuations, and angles.</desc>
+<example>
+// Create an MDLight
+MDLight* obj = [ [ MDLight alloc ] init ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/init.txt</path>
+		<name>init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

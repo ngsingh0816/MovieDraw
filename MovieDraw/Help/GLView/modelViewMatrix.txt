@@ -1,0 +1,27 @@
+<name>modelViewMatrix</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the current modelView matrix that is based off the camera.</desc>
+	</return>
+</type>
+<desc>The current modelView matrix that is based off the camera.</desc>
+<example>
+GLView* view = //...
+MDMatrix matrix = [ view modelViewMatrix ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/projectionMatrix.txt</path>
+		<name>- (MDMatrix) projectionMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry2>
+</see>

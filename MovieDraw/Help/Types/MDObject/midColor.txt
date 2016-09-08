@@ -1,0 +1,27 @@
+<name>midColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>Returns the mid color</desc>
+	</return>
+</type>
+<desc>Returns the mid color of the object, which is equal to the average of all of the meshes' colors.</desc>
+<example>
+MDObject* obj1 = //...
+MDVector4 color = [ obj1 midColor ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

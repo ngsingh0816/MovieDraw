@@ -1,0 +1,47 @@
+<name>MDMatrixCreate</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns a newly created MDMatrix object.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>row1[4]</name>
+		<desc>The first row of the new matrix.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>row2[4]</name>
+		<desc>The second row of the new matrix.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>row3[4]</name>
+		<desc>The third row of the new matrix.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>row4[4]</name>
+		<desc>The fourth row of the new matrix.</desc>
+	</argument3>
+</type>
+<desc>Creates and returns a newly created MDMatrix object that is a 4x4 matrix.</desc>
+<example>
+float old[16] = // ...
+MDMatrix matrix = MDMatrixCreate(&old[0], &old[4], &old[8], &old[12]);	// Creates a copy of the matrix old
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

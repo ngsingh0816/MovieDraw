@@ -1,0 +1,28 @@
+<name>orientation</name>
+<type>property float</type>
+<desc>The camera's orientation in degrees.</desc>
+<example>
+MDCamera* obj = //...
+// Get the value
+float value = obj.orientation;
+// Alternative
+float value = [ obj orientation ];
+// Set the value
+obj.orientation = 45;
+// Alternative
+[ obj setOrientation:45 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/midPoint.txt</path>
+		<name>midPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

@@ -1,0 +1,35 @@
+<name>frameDuration</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>double</type>
+		<desc>Returns duration of a frame in milliseconds.</desc>
+	</return>
+</type>
+<desc>The duration of a frame in milliseconds. This can be used to make things go the same speed even though a computer may not be going at the desired fps.</desc>
+<example>
+GLView* view = //...
+MDVector3 position = MDVector3Create(0, 0, 0);
+// Function that gets called every frame
+void updateFunction()
+{
+	// Moves the position to the right by 0.15 every frame regardless of the number
+	// of FPS the computer is getting
+	position.x += [ view frameDuration ] / 1000.0 * [ [ view window ] FPS ] * 0.15;
+}
+
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/FPS.txt</path>
+		<name>- (unsigned int) FPS</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

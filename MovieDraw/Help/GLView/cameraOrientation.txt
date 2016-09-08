@@ -1,0 +1,29 @@
+<name>cameraOrientation</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the camera's orientation in degrees.</desc>
+	</return>
+</type>
+<desc>Returns the camera's orientation that can be set with setCamera or setCameraOrientation. The default orientation is 0.</desc>
+<example>
+GLView* view = //...
+// Sets the camera's orientation
+[ view setCameraOrientation:90 ];
+float orien = [ view cameraOrientation ];		// Returns 90
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCameraOrientation.txt</path>
+		<name>- (void) setCameraOrientation:(float)orien</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry2>
+</see>

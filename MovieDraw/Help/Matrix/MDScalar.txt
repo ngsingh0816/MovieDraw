@@ -1,0 +1,21 @@
+<name>MDScalar</name>
+<type>float</type>
+<desc>Provides another name for a float / scalar value.</desc>
+<example>
+MDScalar scalar = 5.0;
+float number = scalar;
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDFloatCompare.txt</path>
+		<name>MDFloatCompare(float a, float b)</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

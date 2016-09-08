@@ -1,0 +1,32 @@
+<name>MDLoadScene</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>scene</name>
+		<desc>The name of the scene to load.</desc>
+	</argument0>
+</type>
+<desc>This loads the scene with the given name. It replaces the objects, instances, and other object with those in the scene. If it cannot load the scene, it will say it cannot load the data. This function takes a while, so it best to do during loading.</desc>
+<example>
+// Load the scene called "Start"
+MDLoadScene(@"Start");
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

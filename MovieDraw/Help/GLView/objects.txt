@@ -1,0 +1,29 @@
+<name>objects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of the objects of the GLView</desc>
+	</return>
+</type>
+<desc>Returns the objects of the GLView.</desc>
+<example>
+GLView* view = //...
+// Removes all objects
+[ view setObjects:[ NSArray array ] ];
+NSMutableArray* array = [ view objects ];	// Gives back [ NSMutableArray array ]
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setInstances.txt</path>
+		<name>- (void) setInstances:(NSArray*)insts</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/setObjects.txt</path>
+		<name>- (void) setObjects:(NSArray*)objs</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/setOtherObjects.txt</path>
+		<name>- (void) setOtherObjects:(NSArray*)objs</name>
+	</entry2>
+</see>

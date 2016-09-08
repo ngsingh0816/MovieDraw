@@ -1,0 +1,32 @@
+<name>MDSetGLWindow</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>GLWindow*</type>
+		<name>wind</name>
+		<desc>The GLWindow to be set to the main window.</desc>
+	</argument0>
+</type>
+<desc>Sets the GLWindow to be the main window. This should not have to be called.</desc>
+<example>
+// Sets a 640 x 480 window
+MDSetGLWindow([ [ [ GLWindow alloc ] initWithFrame:NSMakeRect(0, 0, 640, 480) ] autorelease ]);
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

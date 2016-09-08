@@ -1,0 +1,28 @@
+<name>textures</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of MDTextures.</desc>
+	</return>
+</type>
+<desc>Returns a mutable array of the mesh's textures. If you add a texture, you need to call loadNewTextures for it to take effect.</desc>
+<example>
+MDMesh* mesh = //...
+// Get the first texture
+MDTexture* texture = [ [ mesh textures ] objectAtIndex:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/loadNewTextures.txt</path>
+		<name>- (void) loadNewTextures</name>
+	</entry2>
+</see>

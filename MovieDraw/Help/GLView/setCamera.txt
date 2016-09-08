@@ -1,0 +1,48 @@
+<name>setCamera</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>midPoint</name>
+		<desc>The location of the camera.</desc>
+	</argument0>
+	<argument1>
+		<type> MDVector3</type>
+		<name>look</name>
+		<desc>The point the camera is looking at.</desc>
+	</argument1>
+	<argument2>
+		<type> MDVector3</type>
+		<name>rot</name>
+		<desc>The rotation of the camera.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>orien</name>
+		<desc>The orientation of the camera.</desc>
+	</argument3>
+</type>
+<desc>Sets the camera to the specified parameters. If useCamera is set to TRUE by setUseCamera, then the rot parameter of this function will have no effect. If useCamera is set to FALSE by setUseCamera, then the orien parameter of this function will have no effect.</desc>
+<example>
+// Sets the camera to look at (0, 0, -10) from (0, 0, 0)
+GLView* view = //...
+[ view setCamera:MDMVector3Create(0, 0, 0) toLocation:MDVector3Create(0, 0, -10) rotation:MDVector3Create(0, 0, 0) orientation:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

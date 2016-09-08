@@ -1,0 +1,32 @@
+<name>MDSetOtherObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSArray*</type>
+		<name>objs</name>
+		<desc>The array of MDCameras, MDLights, MDParticleEngines, and MDCurves to set the loaded other objects to.</desc>
+	</argument0>
+</type>
+<desc>Sets the other objects for the engine. MDRebuildShaders() is automatically called.</desc>
+<example>
+// Remove all other objects
+MDSetOtherObjects([ NSArray array ]);
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDOtherObjects.txt</path>
+		<name>MDOtherObjects()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

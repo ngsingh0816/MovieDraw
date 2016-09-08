@@ -1,0 +1,35 @@
+<name>initWithMDCurve</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDCurve*</type>
+		<desc>The newly created MDCurve object</desc>
+	</return>
+	<argument0>
+		<type>MDCurve*</type>
+		<name>curve</name>
+		<desc>The curve to make a copy of</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a new instance of an MDCurve that is a copy of the curve supplied. A MDCurve created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+MDCurve* old = //...
+// Create an MDCurve
+MDCurve* obj = [ [ MDCurve alloc ] initWithMDCurve:old ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/init.txt</path>
+		<name>- (MDCurve*) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

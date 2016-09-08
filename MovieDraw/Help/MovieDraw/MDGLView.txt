@@ -1,0 +1,27 @@
+<name>MDGLView</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>GLView*</type>
+		<desc>The current GLView.</desc>
+	</return>
+</type>
+<desc>Returns the current GLView.</desc>
+<example>
+// Gets the view
+GLView* view = MDGLView();
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,53 @@
+<name>drawString</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>GLString*</type>
+		<name>string</name>
+		<desc>The GLString to draw.</desc>
+	</argument0>
+	<argument1>
+		<type>NSPoint</type>
+		<name>location</name>
+		<desc>The position in pixels of where to draw the text.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>rot</name>
+		<desc>The rotation of the text (usually 0).</desc>
+	</argument2>
+	<argument3>
+		<type>BOOL</type>
+		<name>align</name>
+		<desc>Whether the text should be centered or not. If this is TRUE, the text is centered, otherwise the text is aligned to the left.</desc>
+	</argument3>
+</type>
+<desc>Draws text on the screen with the desired parameters.</desc>
+<example>
+// Draws "Hello" in the upper left corner of the view
+GLView* view = //...
+GLString* string = [ view createString:@"Hello" textColor:[ NSColor whiteColor ]
+	withSize:14 withFontName:@"Helvetica" ];
+[ view drawString:string atLocation:NSMakePoint(0, 0) rotation:0 center:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/createString.txt</path>
+		<name>- (GLString*) createString:(NSString*)str textColor:(NSColor*)text withSize:(double)dsize withFontName:(NSString*)fontName</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/writeString.txt</path>
+		<name>- (void) writeString: (NSString*) str textColor: (NSColor*) text 
+			boxColor: (NSColor*) box borderColor: (NSColor*) border
+		  atLocation: (NSPoint) location withSize: (double) dsize 
+		withFontName: (NSString*) fontName rotation:(float) rot center:(BOOL)align</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>vertices</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDParticleVertex*</type>
+		<desc>Returns the particle vertex data</desc>
+	</return>
+</type>
+<desc>Returns the particle vertex data. Each particle vertex is a struct with 3 floats of position followed by 4 floats of color.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the vertices
+MDParticleVertex* verts = [ obj vertices ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/particles.txt</path>
+		<name>- (MDParticle*) particles</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

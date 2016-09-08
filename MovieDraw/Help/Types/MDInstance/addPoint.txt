@@ -1,0 +1,36 @@
+<name>addPoint</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDPoint*</type>
+		<name>point</type>
+		<desc>The MDPoint to add</desc>
+	</argument0>
+</type>
+<desc>Sets the point at the specified index to the one supplied. If the index is greater than the point array's size, an exception will be raised. For the changes made by this function to take effect, you must call setupVBO.</desc>
+<example>
+MDInstance* instance = //...
+MDPoint* p = //...
+// Add p
+[ instance addPoint:p ];
+// Allow changes to take effect
+[ instance setupVBO ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/points.txt</path>
+		<name>- (NSMutableArray*) points</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/setupVBO.txt</path>
+		<name>- (void) setupVBO</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/numberOfPoints.txt</path>
+		<name>- (unsigned long) numberOfPoints</name>
+	</entry2>
+</see>

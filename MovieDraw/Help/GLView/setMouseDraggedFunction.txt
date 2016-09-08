@@ -1,0 +1,38 @@
+<name>setMouseDraggedFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSEvent*)</type>
+		<name>keyF</name>
+		<desc>The function to set to. The event argument is the event that would normally be supplied with one of these functions.</desc>
+	</argument0>
+</type>
+<desc>Sets a user function that is called every time the mouse is dragged.</desc>
+<example>
+void function(NSEvent* event)
+{
+	// Gives the point of the drag in pixels (top left is (0, 0))
+	NSPoint point = [ event locationInWindow ];
+}
+GLView* view = //...
+// Sets the function
+[ view setMouseDraggedFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

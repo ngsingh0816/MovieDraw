@@ -1,0 +1,31 @@
+<name>MDVector3Normalize</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the normalized vector.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>v</name>
+		<desc>The vector to calculate from.</desc>
+	</argument0>
+</type>
+<desc>Returns the vector divided by its magnitude.</desc>
+<example>
+MDVector normal = MDVector3Normalize(MDVector3Create(3, 4, 5));	// Returns (0.424, 0.566, 0.707)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(MDVector3 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3DotProduct.txt</path>
+		<name>MDVector3DotProduct(MDVector3 v1, MDVector3 v2)</name>
+	</entry2>
+</see>

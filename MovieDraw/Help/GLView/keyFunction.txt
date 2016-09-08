@@ -1,0 +1,32 @@
+<name>keyFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void (*)(NSArray*)</type>
+		<desc>Returns the function pointer for the function.</desc>
+	</return>
+	</type>
+<desc>Returns the function pointer for the function.</desc>
+<example>
+void something(NSArray* array)
+{
+}
+GLView* view = //...
+// Sets the function
+[ view setKeyFunction:something ];
+[ view keyFunction ]([ NSArray array ]);		// Executes the function "something"
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>indices</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of NSNumbers.</desc>
+	</return>
+</type>
+<desc>Returns a mutable array of the mesh's indices. If you add or remove an index, you need to call setupVBO on the mesh's instance for it to take effect.</desc>
+<example>
+MDMesh* mesh = //...
+// Get the first index
+unsigned int index = [ [ [ mesh indices ] objectAtIndex:0 ] unsignedIntValue ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/setupIndexData.txt</path>
+		<name>setupIndexData</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/setupVBO.txt</path>
+		<name>- (void) setupVBO</name>
+	</entry2>
+</see>

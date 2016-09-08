@@ -1,0 +1,35 @@
+<name>MDTweenEaseInCubic</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>An interpolation from 0 to 1 based on time.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>time</type>
+		<desc>A measure of how much time has based going from 0 to 1.</desc>
+	</argument0>
+</type>
+<desc>Interpolates the time argument by easing in cubically and returns that value. It is guaranteed to be 0 when time is 0 and 1 when time is 1. It is modeled by the formula: f(x) = x^3.</desc>
+<example>
+// Called every frame
+static float time = 0;
+float value = MDTweenEaseInCubic(time);
+// Increases time so it will reach 1 regardless of how many FPS it is actually getting
+time += 0.1 * MDElapsedTime() * MDFPS() / 1000.0;
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDElapsedTime.txt</path>
+		<name>MDElapsedTime()</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDFPS.txt</path>
+		<name>MDFPS()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

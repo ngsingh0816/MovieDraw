@@ -1,0 +1,33 @@
+<name>setName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>Sets the camera's name.</desc>
+	</argument0>
+</type>
+<desc>Sets the camera's name.</desc>
+<example>
+MDCamera* obj = //...
+// Sets the camera's name to "Camera 1"
+[ obj setName:@"Camera 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/name.txt</path>
+		<name>- (NSString*) name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

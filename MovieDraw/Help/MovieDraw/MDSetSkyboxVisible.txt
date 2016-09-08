@@ -1,0 +1,32 @@
+<name>MDSetSkyboxVisible</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>visible</name>
+		<desc>Whether the skybox is visible or not.</desc>
+	</argument0>
+</type>
+<desc>Sets whether the skybox is visible or not. You do not need to call updateSkybox for this to take effect.</desc>
+<example>
+// Enable the skybox
+MDSetSkyboxVisible(YES);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/updateSkybox.txt</path>
+		<name>- (void) updateSkybox</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

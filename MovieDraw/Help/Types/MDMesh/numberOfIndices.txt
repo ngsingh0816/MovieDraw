@@ -1,0 +1,28 @@
+<name>numberOfIndices</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The number of indices the mesh has.</desc>
+	</return>
+</type>
+<desc>Returns the number of indices that this mesh has.</desc>
+<example>
+MDMesh* mesh = //...
+// Get number of indices
+unsigned int num = [ mesh numberOfIndices ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/indexAtIndex.txt</path>
+		<name>- (unsigned int) indexAtIndex:(unsigned int)index</name>
+	</entry2>
+</see>

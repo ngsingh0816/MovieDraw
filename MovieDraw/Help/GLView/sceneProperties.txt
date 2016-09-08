@@ -1,0 +1,27 @@
+<name>sceneProperites</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableDictionary*</type>
+		<desc>Returns the scene properties.</desc>
+	</return>
+</type>
+<desc>Returns the scene properties which contain information like skybox data. It is probably better to use other methods to modify this.</desc>
+<example>
+GLView* view = //...
+NSMutableDictionary* dict = [ view sceneProperties ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setSceneProperties.txt</path>
+		<name>- (void) setSceneProperties:(NSString*)props</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

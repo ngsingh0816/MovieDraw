@@ -1,0 +1,28 @@
+<name>drawMode</name>
+<type>property unsigned char</type>
+<desc>The draw mode for the instance. This can be set, but it will have no effect on the instance because it always uses triangles.</desc>
+<example>
+MDInstance* inst = //...
+// Get the value
+unsigned char value = inst.drawMode;
+// Alternative
+unsigned char value = [ inst drawMode ];
+// Set the value
+inst.drawMode = GL_TRIANGLES;
+// Alternative
+[ inst setDrawMode:GL_TRIANGLES ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry2>
+</see>

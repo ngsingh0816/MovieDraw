@@ -1,0 +1,33 @@
+<name>SetXZ</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>p</name>
+		<desc>The vector to set the x and z components to.</desc>
+	</argument0>
+</type>
+<desc>Sets the x and z components of the vector.</desc>
+<example>
+MDVector3 vector = MDVector3Create(5, 0, 1);
+vector.SetXZ(MDVector2Create(3, 4));
+if (vector.GetX() == 3.0 && vector.GetZ() == 4.0)	// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/GetX.txt</path>
+		<name>GetX()</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3/SetY.txt</path>
+		<name>SetY(float yVal)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3/SetXZ .txt</path>
+		<name>SetXZ(float xVal, float zVal)</name>
+	</entry2>
+</see>

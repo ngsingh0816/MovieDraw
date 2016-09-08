@@ -1,0 +1,29 @@
+<name>glView</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>GLView*</type>
+		<desc>Returns the window's GLView.</desc>
+	</return>
+</type>
+<desc>This returns the window's GLView that was created when setUpGLView was called. This will return nil if setUpGLView and setGLView were not called.</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+GLView* view = [ window glView ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setUpGLView.txt</path>
+		<name>- (void) setUpGLView</name>
+	</entry2>
+</see>

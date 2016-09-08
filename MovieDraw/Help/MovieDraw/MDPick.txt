@@ -1,0 +1,41 @@
+<name>MDPick</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The index of the object that is under the point.</desc>
+	</return>
+	<argument0>
+		<type>NSPoint</type>
+		<name>point</name>
+		<desc>The point in pixels to search for an object.</desc>
+	</argument0>
+</type>
+<desc>Returns closet object at the window point. If no object is found, it returns -1.</desc>
+<example>
+// Gets the object at the center
+NSSize size = MDGLResolution();
+// Get the index of the middle
+unsigned int index = MDPick(size.width / 2, size.height / 2);
+// Checks if there is an object there even
+if (index \< [ MDObjects() count ])
+{
+	MDObject* obj = [ MDObjects() objectAtIndex:index ];
+	// Do something
+	DoSomething();
+}
+</example>
+<see>
+	<entry0>
+		<path>/GLView/pick.txt</path>
+		<name>- (unsigned int) pick:(NSPoint)point</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

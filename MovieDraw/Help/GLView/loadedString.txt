@@ -1,0 +1,28 @@
+<name>loadedString</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the name of the current string.</desc>
+	</return>
+</type>
+<desc>Returns the name of the current string.</desc>
+<example>
+GLView* view = //...
+[ view setLoadedString:@"Hi" ];
+NSString* str = [ view loadedString ];		// Returns @"Hi"
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setLoadedString.txt</path>
+		<name>- (void) setLoadedString:(NSString*)string</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

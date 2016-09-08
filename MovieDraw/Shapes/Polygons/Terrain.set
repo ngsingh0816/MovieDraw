@@ -1,0 +1,71 @@
+void main()
+{
+    NSTextField* label = nil;
+    label = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 15, 90, 17) ];
+    [ label setStringValue:@"Subdivisions:" ];
+    [ label setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label setBezeled:NO ];
+    [ label setDrawsBackground:NO ];
+    [ label setEditable:NO ];
+    [ label setSelectable:NO ];
+    [ view addSubview:label ];
+    NSTextField* label2 = nil;
+    label2 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(105, 15, 96, 22) ];
+    [ label2 setStringValue:Format(@"%i", xDim) ];
+    [ label2 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label2 setToolTip:@"X Subdivisions" ];
+    [ view addSubview:label2 ];
+ NSTextField* label3 = nil;
+    label3 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(205, 15, 10, 17) ];
+    [ label3 setStringValue:@"x" ];
+    [ label3 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label3 setBezeled:NO ];
+    [ label3 setDrawsBackground:NO ];
+    [ label3 setEditable:NO ];
+    [ label3 setSelectable:NO ];
+    [ view addSubview:label3 ];
+ NSTextField* label4 = nil;
+    label4 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(221, 15, 96, 22) ];
+    [ label4 setStringValue:Format(@"%i", zDim) ];
+    [ label4 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label4 setToolTip:@"Z Subdivisions" ];
+    [ view addSubview:label4 ];
+    NSButton* set = [ [ NSButton alloc ] initWithFrame:NSMakeRect(316, 12, 90, 32) ];
+    [ set setTitle:@"Set" ];
+    [ set setTarget:@selector(set).target ];
+    [ set setAction:@selector(set) ];
+    [ set setButtonType:0 ];
+    [ set setBezelStyle:1 ];
+    [ view addSubview:set ];
+}
+
+void set()
+{
+	xDim = [ label2 doubleValue ];
+	NSNumber* bool = LessThan(xDim, 1);
+	if ([ bool doubleValue ])
+	{
+		xDim = [ [ NSNumber numberWithDouble:1 ] doubleValue ];
+		[ label2 setStringValue:Format(@"%i", xDim) ];
+	}
+	zDim = [ label4 doubleValue ];
+	NSNumber* bool2 = LessThan(zDim, 1);
+	if ([ bool2 doubleValue ])
+	{
+		zDim = [ [ NSNumber numberWithDouble:1 ] doubleValue ];
+		[ label4 setStringValue:Format(@"%i", zDim) ];
+	}
+	[ view setNeedsDisplay:YES ];
+}
+
+void update()
+{
+}
+
+void draw()
+{
+}
+
+@end
+xDim = 5.0
+zDim = 5.0

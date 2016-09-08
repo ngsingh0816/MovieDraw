@@ -1,0 +1,31 @@
+<name>MDVector4Magnitude</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the magnitude (length) of the vector.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>v</name>
+		<desc>The vector to calculate from.</desc>
+	</argument0>
+</type>
+<desc>Returns the magnitude of the vector by taking the square root of the sum of each of the components squared.</desc>
+<example>
+float length = MDVector4Magnitude(MDVector4Create(3, 4, 5, 6));	// Returns 9.274
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4Create.txt</path>
+		<name>MDVector4Create(MDVector4 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4DotProduct.txt</path>
+		<name>MDVector4DotProduct(MDVector4 v1, MDVector4 v2)</name>
+	</entry2>
+</see>

@@ -1,0 +1,33 @@
+<name>SetY</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>yVal</name>
+		<desc>The new y component of the vector.</desc>
+	</argument0>
+</type>
+<desc>Sets the y component of the vector.</desc>
+<example>
+MDVector4 vector = MDVector4Create(0, 5, 1, 2);
+vector.SetY(3);
+if (vector.GetY() == 3.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/GetY.txt</path>
+		<name>GetY()</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/SetX.txt</path>
+		<name>SetX(float xVal)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry2>
+</see>

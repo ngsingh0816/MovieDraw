@@ -1,0 +1,30 @@
+<name>lightType</name>
+<type>property unsigned int</type>
+<desc>The type of light - MDDirectionalLight(0), MDPointLight(1), MDSpotLight(2). If this is changed, then MDRebuildShaders or rebuildShaders must be called.</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+unsigned int value = obj.lightType;
+// Alternative
+unsigned int value = [ obj lightType ];
+// Set the value
+obj.lightType = MDPointLight;
+// Alternative
+[ obj setLightType:MDPointLight ];
+// Update changes
+MDRebuildShaders();
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/enableShadows.txt</path>
+		<name>enableShadows</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDRebuildShaders.txt</path>
+		<name>MDRebuildShaders()</name>
+	</entry2>
+</see>

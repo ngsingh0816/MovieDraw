@@ -1,0 +1,53 @@
+<name>MDSetCamera</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>mid</name>
+		<desc>The midpoint of the camera.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>look</name>
+		<desc>The look point of the camera.</desc>
+	</argument1>
+	<argument2>
+		<type>MDVector3</type>
+		<name>rot</name>
+		<desc>The rotation of the camera. This has no effect if use is TRUE.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>orien</name>
+		<desc>The orientation of the camera. This has no effect if use it FALSE.</desc>
+	</argument3>
+	<argument4>
+		<type>BOOL</type>
+		<name>use</name>
+		<desc>If this is TRUE, the camera will be like a camera, otherwise it will simulate model view matrix transformations.</desc>
+	</argument4>
+</type>
+<desc>Sets the current camera.</desc>
+<example>
+// Sets the current camera
+MDSetCamera(MDVector3Create(0, 0, -20), MDVector3Create(0, 0, 0),
+	MDVector3Create(0, 0, 0), 0, YES);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCamera.txt</path>
+		<name>- (void) setCamera:(MDVector3)midPoint toLocation:(MDVector3)look rotation:(MDVector3)rot orientation:(float)orien</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry2>
+</see>

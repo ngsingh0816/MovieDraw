@@ -1,0 +1,28 @@
+<name>setUpGLView</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>This sets up and initializes the OpenGL view and its respective components. The GLWindow will just be a regular window if this is not called.</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/updateGL.txt</path>
+		<name>- (void) updateGL</name>
+	</entry2>
+</see>

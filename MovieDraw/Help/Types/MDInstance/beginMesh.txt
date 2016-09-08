@@ -1,0 +1,33 @@
+<name>beginMesh</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Begins a new mesh, which allows mesh editing functions to be acted upon that instance. This allows both addTexture functions as well as addIndex and setColor to be enabled. They act upon the current mesh.</desc>
+<example>
+MDInstance* inst = //...
+// Add a mesh of the indices 4, 1, 3
+[ inst beginMesh ];
+[ inst addIndex:4 ];
+[ inst addIndex:1 ];
+[ inst addIndex:2 ];
+// Finish that mesh
+[ inst endMesh ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/endMesh.txt</path>
+		<name>- (void) endMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/addIndex.txt</path>
+		<name>- (void) addIndex:(unsigned int)index</name>
+	</entry2>
+</see>

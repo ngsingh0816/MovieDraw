@@ -1,0 +1,37 @@
+<name>textureAtIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDTexture*</type>
+		<desc>The MDTexture at that index</desc>
+	</return>
+	<argument0>
+		<type>unsigned long</type>
+		<name>index</type>
+		<desc>The index in the array of textures</desc>
+	</argument0>
+</type>
+<desc>Returns the MDTexture at the specified index. If the index is greater than the texture array's size, an exception will be raised.</desc>
+<example>
+MDMesh* mesh = //...
+// Checks if it has at least one texture
+if ([ mesh numberOfTextures ])
+{
+	// Gets the first texture
+	MDTexture* first = [ mesh textureAtIndex:0 ];
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/textures.txt</path>
+		<name>- (NSMutableArray*) textures</name>
+	</entry2>
+</see>

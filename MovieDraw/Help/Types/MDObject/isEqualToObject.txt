@@ -1,0 +1,36 @@
+<name>isEqualToObject</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns whether the two objects are equal.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object to compare with</desc>
+	</argument0>
+</type>
+<desc>Compares if the two objects are equal and returns TRUE if they are. However, this does not take into account point normals or point texture coordinates, but the two objects need to have the same properties for this to return TRUE. It does take into account the points' position.</desc>
+<example>
+MDObject* obj1 = //...
+MDObject* obj2 = //...
+if ([ obj1 isEqualToObject:obj2 ])
+{
+	// They are the same object
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

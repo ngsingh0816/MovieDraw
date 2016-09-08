@@ -1,0 +1,28 @@
+<name>rotateAngle</name>
+<type>property float</type>
+<desc>The object's rotational angle in degrees.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+float value = obj.rotateAngle;
+// Alternative
+float value = [ obj rotateAngle ];
+// Set the value
+obj.rotateAngle = 90;
+// Alternative
+[ obj setRotateAngle:90 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDObject/rotateAxis.txt</path>
+		<name>rotateAxis</name>
+	</entry2>
+</see>

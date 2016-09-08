@@ -1,0 +1,33 @@
+<name>MDMatrixInverse</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the inverse matrix of the matrix.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix</name>
+		<desc>The matrix to find the inverse of.</desc>
+	</argument0>
+</type>
+<desc>Returns the inverse of a matrix. The inverse of a matrix multiplied by the original matrix is the same as the identity matrix.</desc>
+<example>
+MDMatrix matrix = // ...
+MDMatrix inverse = MDMatrixDeterminant(matrix);
+MDMatrix identity = matrix * inverse;	// Equal to MDMatrixIdentity()
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixDeterminant.txt</path>
+		<name>MDMatrixDeterminant(MDMatrix matrix)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

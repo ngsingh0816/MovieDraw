@@ -1,0 +1,33 @@
+<name>setCameraUse</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>use</name>
+		<desc>The type of camera to use.</desc>
+	</argument0>
+</type>
+<desc>If use is TRUE, then the camera will be set to simulate a real camera and rotation will be disabled. If use is FAlSE, then the camera will be set to simulate model view transformations and orientation will be disabled.</desc>
+<example>
+GLView* view = //...
+// Sets the use a real camera
+[ view setCameraUse:YES ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraRotation.txt</path>
+		<name>- (MDVector3) cameraRotation</name>
+	</entry2>
+</see>

@@ -1,0 +1,27 @@
+<name>projectionMatrix</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the current projection matrix.</desc>
+	</return>
+</type>
+<desc>The current projection matrix.</desc>
+<example>
+GLView* view = //...
+MDMartix matrix = [ view projectionMatrix ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/modelViewMatrix.txt</path>
+		<name>- (MDMatrix) modelViewMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry2>
+</see>

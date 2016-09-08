@@ -1,0 +1,30 @@
+<name>numberOfMeshes</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned long</type>
+		<desc>Returns a the number of meshes the instance has</desc>
+	</return>
+</type>
+<desc>Returns a the number of meshes the instance has.</desc>
+<example>
+MDInstance* inst = //...
+// Get the number of meshes
+unsigned long count = [ inst numberOfMeshes ];
+// Alternative
+count = [ [ inst meshes ] count ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/meshes.txt</path>
+		<name>- (NSMutableArray*) meshes</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

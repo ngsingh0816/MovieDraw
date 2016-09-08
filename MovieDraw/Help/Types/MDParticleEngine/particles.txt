@@ -1,0 +1,28 @@
+<name>particles</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDParticle*</type>
+		<desc>Returns the particle data array</desc>
+	</return>
+</type>
+<desc>Returns the particle data array. Each particle is a struct with a double of life (how many frames it has before it gets renewed), 3 floats of position, 3 floats of startPos (the starting position), 3 floats of color, a float of size, and 3 floats of seed (a randomized number between -1 and 1 with 5 digits of precision).</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the particles
+MDParticle* particles = [ obj particles ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/liveParticles.txt</path>
+		<name>- (unsigned long) liveParticles</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

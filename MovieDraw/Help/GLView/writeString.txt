@@ -1,0 +1,76 @@
+<name>writeString</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>str</name>
+		<desc>The text to draw.</desc>
+	</argument0>
+	<argument1>
+		<type>NSColor*</type>
+		<name>textColor</name>
+		<desc>The color of the text.</desc>
+	</argument1>
+	<argument2>
+		<type>NSColor*</type>
+		<name>boxColor</name>
+		<desc>The color of the surrounding box of the text (usually should be [ NSColor clearColor ].</desc>
+	</argument2>
+	<argument3>
+		<type>NSColor*</type>
+		<name>borderColor</name>
+		<desc>The color of the border of the box of the text (usually should be [ NSColor clearColor ].</desc>
+	</argument3>
+	<argument4>
+		<type>NSPoint</type>
+		<name>point</name>
+		<desc>The position in pixels of where to draw the text.</desc>
+	</argument4>
+	<argument5>
+		<type>double</type>
+		<name>size</name>
+		<desc>The font size to use for the text (suggested: 20).</desc>
+	</argument5>
+	<argument6>
+		<type>NSString*</type>
+		<name>fontName</name>
+		<desc>The font name to use for the text (suggested: @"Helvetica").</desc>
+	</argument6>
+	<argument7>
+		<type>float</type>
+		<name>rot</name>
+		<desc>The rotation of the text (usually 0).</desc>
+	</argument7>
+	<argument8>
+		<type>BOOL</type>
+		<name>align</name>
+		<desc>Whether the text should be centered or not. If this is TRUE, the text is centered, otherwise the text is aligned to the left.</desc>
+	</argument8>
+</type>
+<desc>Draws text on the screen with the desired parameters</desc>
+<example>
+// Draws "Hello" in the upper left corner of the view
+GLView* view = //...
+[ view writeString:@"Hello" textColor:[ NSColor yellowColor ] boxColor:
+	[ NSColor clearColor ] borderColor: [ NSColor clearColor ]
+	atLocation:NSMakePoint(0, 0) withSize:12 withFontName:@"Helvetica"
+	rotation:0 center:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

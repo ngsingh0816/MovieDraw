@@ -1,0 +1,23 @@
+<name>MDParticleEngine</name>
+<type>interface</type>
+<desc>A class that represents a particle emitter. This emits particles, updates them every frame, and has many configurable options.</desc>
+<example>
+// Create an MDParticleEngine
+MDParticleEngine* obj = [ [ MDParticleEngine alloc ] init ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/init.txt</path>
+		<name>init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

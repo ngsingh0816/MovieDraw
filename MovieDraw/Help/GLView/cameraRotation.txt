@@ -1,0 +1,29 @@
+<name>cameraRotation</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the camera's rotation in degrees.</desc>
+	</return>
+</type>
+<desc>Returns the camera's rotation that can be set with setCamera or setCameraRotation. The default rotation is (0, 0, 0).</desc>
+<example>
+GLView* view = //...
+// Sets the camera's rotation
+[ view setCameraRotation:MDVector3Create(90, 0, ) ];
+MDVector3 vector = [ view cameraRotation ];		// Returns (90, 0, 0)
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCameraRotation.txt</path>
+		<name>- (void) setCameraRotation:(MDVector3)rot</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry2>
+</see>

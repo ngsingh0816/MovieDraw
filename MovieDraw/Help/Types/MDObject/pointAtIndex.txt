@@ -1,0 +1,37 @@
+<name>pointAtIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDPoint*</type>
+		<desc>The MDPoint at that index</desc>
+	</return>
+	<argument0>
+		<type>unsigned long</type>
+		<name>index</type>
+		<desc>The index in the array of points</desc>
+	</argument0>
+</type>
+<desc>Returns the MDPoint at the specified index. If the index is greater than the point array's size, an exception will be raised.</desc>
+<example>
+MDObject* obj = //...
+// Checks if it has at least one point
+if ([ obj numberOfPoints ])
+{
+	// Gets the first point
+	MDPoint* firstPoint = [ obj pointAtIndex:0 ];
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/points.txt</path>
+		<name>- (NSMutableArray*) points</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDObject/numberOfPoints.txt</path>
+		<name>- (unsigned long) numberOfPoints</name>
+	</entry2>
+</see>

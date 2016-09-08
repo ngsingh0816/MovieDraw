@@ -1,0 +1,28 @@
+<name>lookPoint</name>
+<type>property MDVector3</type>
+<desc>The camera's look position (where the camera is looking).</desc>
+<example>
+MDCamera* obj = //...
+// Get the value
+MDVector3 value = obj.lookPoint;
+// Alternative
+MDVector3 value = [ obj lookPoint ];
+// Set the value
+obj.lookPoint = MDVector3Create(0, 1, 0);
+// Alternative
+[ obj setLookPoint:MDVector3Create(0, 1, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/orientation.txt</path>
+		<name>orientation</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

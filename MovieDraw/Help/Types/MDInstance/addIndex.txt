@@ -1,0 +1,38 @@
+<name>addIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>index</name>
+		<desc>The index to add to the mesh</desc>
+	</argument0>
+</type>
+<desc>Adds an index to the current mesh. This does nothing if beginMesh has not been called or if endMesh has been called.</desc>
+<example>
+MDInstance* inst = //...
+// Add a mesh of the indices 4, 1, 3
+[ inst beginMesh ];
+[ inst addIndex:4 ];
+[ inst addIndex:1 ];
+[ inst addIndex:2 ];
+// Finish that mesh
+[ inst endMesh ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/beginMesh.txt</path>
+		<name>- (void) beginMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/endMesh.txt</path>
+		<name>- (void) endMesh</name>
+	</entry2>
+</see>

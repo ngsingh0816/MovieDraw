@@ -1,0 +1,39 @@
+<name>setColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>color</name>
+		<desc>The color to set the current mesh to</desc>
+	</argument0>
+</type>
+<desc>Sets the color of the current mesh. This does nothing if beginMesh has not been called or if endMesh has been called.</desc>
+<example>
+MDInstance* inst = //...
+// Add a red mesh of the indices 4, 1, 3
+[ inst beginMesh ];
+[ inst setColor:MDVector4Create(1, 0, 0, 1) ];
+[ inst addIndex:4 ];
+[ inst addIndex:1 ];
+[ inst addIndex:2 ];
+// Finish that mesh
+[ inst endMesh ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/beginMesh.txt</path>
+		<name>- (void) beginMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/endMesh.txt</path>
+		<name>- (void) endMesh</name>
+	</entry2>
+</see>

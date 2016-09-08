@@ -1,0 +1,107 @@
+<name>MDMatrixCreate</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns a newly created MDMatrix object.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>r1c1</name>
+		<desc>The first row, first column of the new matrix.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>r1c2</name>
+		<desc>The first row, second column of the new matrix.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>r1c3</name>
+		<desc>The first row, third column of the new matrix.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>r1c4</name>
+		<desc>The first row, fourth column of the new matrix.</desc>
+	</argument3>
+	<argument4>
+		<type>float</type>
+		<name>r2c1</name>
+		<desc>The second row, first column of the new matrix.</desc>
+	</argument4>
+	<argument5>
+		<type>float</type>
+		<name>r2c2</name>
+		<desc>The second row, second column of the new matrix.</desc>
+	</argument5>
+	<argument6>
+		<type>float</type>
+		<name>r2c3</name>
+		<desc>The second row, third column of the new matrix.</desc>
+	</argument6>
+	<argument7>
+		<type>float</type>
+		<name>r2c4</name>
+		<desc>The second row, fourth column of the new matrix.</desc>
+	</argument7>
+	<argument8>
+		<type>float</type>
+		<name>r3c1</name>
+		<desc>The third row, first column of the new matrix.</desc>
+	</argument8>
+	<argument9>
+		<type>float</type>
+		<name>r3c2</name>
+		<desc>The third row, second column of the new matrix.</desc>
+	</argument9>
+	<argument10>
+		<type>float</type>
+		<name>r3c3</name>
+		<desc>The third row, third column of the new matrix.</desc>
+	</argument10>
+	<argument11>
+		<type>float</type>
+		<name>r3c4</name>
+		<desc>The third row, fourth column of the new matrix.</desc>
+	</argument11>
+	<argument12>
+		<type>float</type>
+		<name>r4c1</name>
+		<desc>The fourth row, first column of the new matrix.</desc>
+	</argument12>
+	<argument13>
+		<type>float</type>
+		<name>r4c2</name>
+		<desc>The fourth row, second column of the new matrix.</desc>
+	</argument13>
+	<argument14>
+		<type>float</type>
+		<name>r4c3</name>
+		<desc>The fourth row, third column of the new matrix.</desc>
+	</argument14>
+	<argument15>
+		<type>float</type>
+		<name>r4c4</name>
+		<desc>The fourth row, fourth column of the new matrix.</desc>
+	</argument15>
+</type>
+<desc>Creates and returns a newly created MDMatrix object that is a 4x4 matrix.</desc>
+<example>
+float old[16] = // ...
+MDMatrix matrix = MDMatrixCreate(old[0], old[4], old[8], old[12], old[1], old[5], old[9], old[13], old[2], old[6], old[10], old[14], old[3], old[7], old[11], old[15]);	// Converts the row major old matrix to column major new matrix
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

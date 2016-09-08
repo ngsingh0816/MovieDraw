@@ -1,0 +1,42 @@
+<name>MDFloatCompare</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns TRUE if the two arguments are equal, otherwise returns FALSE.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>a</name>
+		<desc>A float value that will be compared to b.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>b</name>
+		<desc>A float value that will be compared to a.</desc>
+	</argument1>
+</type>
+<desc>First, this function tests if (a == b), then checks if the difference between the two numbers is less than the minimum float number, and finally checks if the difference between the two numbers over the sum of the absolute value of both numbers is less than the float epsilon value. If any of these tests pass, then the two numbers are equal and the function returns TRUE.</desc>
+<example>
+if (MDFloatCompare(0.5, 0.5))	// Returns TRUE
+if (MDFloatCompare(0.5, 0.4))	// Returns FALSE
+
+float a = 0.5;
+float b = a / 123.456;
+b *= 123.456;
+if (MDFloatCompare(a, b))	// Returns TRUE, even though (a == b) may return FALSE
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDScalar.txt</path>
+		<name>MDScalar</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

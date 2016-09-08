@@ -1,0 +1,29 @@
+<name>indexData</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int*</type>
+		<desc>A pointer array of numberOfIndices length with the index data for the mesh.</desc>
+	</return>
+</type>
+<desc>Returns A pointer array of numberOfIndices length with the index data for the mesh.</desc>
+<example>
+MDMesh* mesh = //...
+[ mesh setupIndexData ];
+// Get the index data
+unsigned int* data = [ mesh indexData ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/numberOfIndices.txt</path>
+		<name>- (unsigned int) numberOfIndices</name>
+	</entry2>
+</see>

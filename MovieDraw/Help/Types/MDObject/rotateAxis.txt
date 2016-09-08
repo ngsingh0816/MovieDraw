@@ -1,0 +1,28 @@
+<name>rotateAxis</name>
+<type>property MDVector3</type>
+<desc>The object's rotational axis.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+MDVector3 value = obj.rotateAxis;
+// Alternative
+MDVector3 value = [ obj rotateAxis ];
+// Set the value
+obj.rotateAxis = MDVector3Create(0, 1, 0);
+// Alternative
+[ obj setRotateAxis:MDVector3Create(0, 1, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDObject/rotateAngle.txt</path>
+		<name>rotateAngle</name>
+	</entry2>
+</see>

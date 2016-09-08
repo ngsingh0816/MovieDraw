@@ -1,0 +1,43 @@
+<name>MDObjectWithName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDObject*</type>
+		<desc>The MDObject that matches the specified parameters. If no object is found, this will return nil.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>objName</name>
+		<desc>The name of the object you want to find.</desc>
+	</argument0>
+	<argument1>
+		<type>NSString*</type>
+		<name>instName</name>
+		<desc>The name of the instance of the object you want to find.</desc>
+	</argument1>
+</type>
+<desc>Returns the first object with that name and instance name. There should not be more than one object with the same name and instance name unless it is manually set.</desc>
+<example>
+// Gets the object named "One" with the instance named "Ball"
+MDObject* object = MDObjectWithName(@"One", @"Ball");
+// Check if the object exists
+if (object)
+{
+	// It exists, do something
+	DoSomething();
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

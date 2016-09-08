@@ -1,0 +1,28 @@
+<name>FPS</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The desired frames per second of the GLWindow.</desc>
+	</return>
+</type>
+<desc>This function returns the desired frames per second that can be set with setFPS. The default value is 60.</desc>
+<example>
+GLWindow* window = //...
+[ window setFPS:30 ];	// Sets frames per second to 30
+unsigned int fps = [ window FPS ];	// Returns 30
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setFPS.txt</path>
+		<name>- (void) setFPS:(unsigned int) tar</name>
+	</entry2>
+</see>

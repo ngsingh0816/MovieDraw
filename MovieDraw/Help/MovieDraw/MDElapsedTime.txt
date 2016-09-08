@@ -1,0 +1,27 @@
+<name>MDElapsedTime</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>double</type>
+		<desc>The amount of time the last frame took in milliseconds.</desc>
+	</return>
+</type>
+<desc>Returns the amount of time the last frame took in milliseconds. For 60 frames per second this should be 13.33333. This can be used with MDFPS() to adjust calculations so that they don't go slowly if a computer is not going the desired frames per second.</desc>
+<example>
+// Value to multiply by to adjust calculations
+float adjust = MDElapsedTime() * MDFPS() / 1000.0;
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDFPS.txt</path>
+		<name>MDFPS</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

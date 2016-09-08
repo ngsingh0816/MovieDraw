@@ -1,0 +1,57 @@
+void main()
+{
+    NSTextField* label = nil;
+    label = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 15, 90, 17) ];
+    [ label setStringValue:@"Points:" ];
+    [ label setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label setBezeled:NO ];
+    [ label setDrawsBackground:NO ];
+    [ label setEditable:NO ];
+    [ label setSelectable:NO ];
+    [ view addSubview:label ];
+    NSTextField* label2 = nil;
+    label2 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(62, 15, 251, 22) ];
+    [ label2 setStringValue:Format(@"%i", perValue) ];
+    [ label2 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label2 setToolTip:@"The number of points will actually be this value + 2" ];
+    [ view addSubview:label2 ];
+    NSButton* set = [ [ NSButton alloc ] initWithFrame:NSMakeRect(316, 12, 90, 32) ];
+    [ set setTitle:@"Set" ];
+    [ set setTarget:@selector(set).target ];
+    [ set setAction:@selector(set) ];
+    [ set setButtonType:0 ];
+    [ set setBezelStyle:1 ];
+    [ view addSubview:set ];
+}
+
+void set()
+{
+	perValue = [ label2 doubleValue ];
+	NSNumber* bool = LessThan(perValue, 3);
+	if ([ bool doubleValue ])
+	{
+		perValue = [ [ NSNumber numberWithDouble:3 ] doubleValue ];
+		[ label2 setStringValue:Format(@"%i", perValue) ];
+	}
+	NSNumber* bool2 = MoreThan(perValue, 360);
+	if ([ bool2 doubleValue ])
+	{
+		perValue = [ [ NSNumber numberWithDouble:360 ] doubleValue ];
+		[ label2 setStringValue:Format(@"%i", perValue) ];
+	}
+	[ view setNeedsDisplay:YES ];
+}
+
+void update()
+{
+}
+
+void draw()
+{
+	[ view lockFocus ];
+	DrawNGon(perValue, 100);
+	[ view unlockFocus ];
+}
+
+@end
+perValue = 5.0

@@ -1,0 +1,28 @@
+<name>velocities</name>
+<type>property MDVector3</type>
+<desc>The velocity multipliers in the respective direction for the particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+MDVector3 value = obj.velocities;
+// Alternative
+MDVector3 value = [ obj velocities ];
+// Set the value
+obj.velocities = MDVector3Create(1, 1, 1);
+// Alternative
+[ obj setVelocities:MDVector3Create(1, 1, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/position.txt</path>
+		<name>position</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

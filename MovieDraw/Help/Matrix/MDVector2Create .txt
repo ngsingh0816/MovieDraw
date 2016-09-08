@@ -1,0 +1,37 @@
+<name>MDVector2Create</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns a newly created MDVector2 object.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>x</name>
+		<desc>The x or first component of the vector.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>y</name>
+		<desc>The y or second component of the vector.</desc>
+	</argument1>
+</type>
+<desc>Creates and returns a newly created MDVector2 object that is a two component vector.</desc>
+<example>
+MDVector2 vector = MDVector2Create(5, 0);	// Creates the vector (5, 0)
+if (MDVector2Create(3, 4).y == 4)		// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(MDVector2 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Magnitude.txt</path>
+		<name>MDVector2Magnitude(MDVector2 v)</name>
+	</entry2>
+</see>

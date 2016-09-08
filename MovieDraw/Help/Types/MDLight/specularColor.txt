@@ -1,0 +1,28 @@
+<name>specularColor</name>
+<type>property MDVector4</type>
+<desc>The light's specular color.</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+MDVector4 value = obj.specularColor;
+// Alternative
+MDVector4 value = [ obj specularColor ];
+// Set the value
+obj.specularColor = MDVector4Create(0, 1, 0, 1);
+// Alternative
+[ obj setSpecularColor:MDVector4Create(0, 1, 0, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/position.txt</path>
+		<name>position</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

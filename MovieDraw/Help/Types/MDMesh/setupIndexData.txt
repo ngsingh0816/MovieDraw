@@ -1,0 +1,28 @@
+<name>setupIndexData</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Sets up the index data to a format for OpenGL.</desc>
+<example>
+MDMesh* mesh = //...
+// Sets up the index data
+[ mesh setupIndexData ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/indices.txt</path>
+		<name>- (NSMutableArray*) indices</name>
+	</entry2>
+</see>

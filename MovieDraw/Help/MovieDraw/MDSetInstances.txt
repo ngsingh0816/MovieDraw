@@ -1,0 +1,32 @@
+<name>MDSetInstances</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSArray*</type>
+		<name>objs</name>
+		<desc>The array of MDInstances to set the loaded instances to.</desc>
+	</argument0>
+</type>
+<desc>Sets the instances for the engine to draw.</desc>
+<example>
+// Remove all instances
+MDSetInstances([ NSArray array ]);
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDInstances.txt</path>
+		<name>MDInstances()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

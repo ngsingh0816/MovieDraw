@@ -1,0 +1,33 @@
+<name>SetW</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>wVal</name>
+		<desc>The new W component of the vector.</desc>
+	</argument0>
+</type>
+<desc>Sets the w component of the vector.</desc>
+<example>
+MDVector4 vector = MDVector4Create(0, 5, 1, 2);
+vector.SetW(3);
+if (vector.GetW() == 3.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/GetW.txt</path>
+		<name>GetW()</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/SetX.txt</path>
+		<name>SetX(float xVal)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry2>
+</see>

@@ -1,0 +1,32 @@
+<name>drawFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void (*)()</type>
+		<desc>Returns the function pointer for the draw function.</desc>
+	</return>
+	</type>
+<desc>Returns the function pointer for the function.</desc>
+<example>
+void something()
+{
+}
+GLView* view = //...
+// Sets the function
+[ view setDrawFunction:something ];
+[ view drawFunction ]();		// Executes the function "something"
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

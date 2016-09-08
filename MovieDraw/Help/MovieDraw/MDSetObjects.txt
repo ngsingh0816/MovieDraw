@@ -1,0 +1,32 @@
+<name>MDSetObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSArray*</type>
+		<name>objs</name>
+		<desc>The array of MDObjects to set the loaded object to.</desc>
+	</argument0>
+</type>
+<desc>Sets the objects for the engine to draw.</desc>
+<example>
+// Remove all objects
+MDSetObjects([ NSArray array ]);
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDObjects.txt</path>
+		<name>MDObjects()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

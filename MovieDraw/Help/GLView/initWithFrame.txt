@@ -1,0 +1,47 @@
+<name>initWithFrame</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created GLView.</desc>
+	</return>
+	<argument0>
+		<type>NSRect</type>
+		<name>frame</name>
+		<desc>The frame rect of the GLView to initialize.</desc>
+	</argument0>
+	<argument1>
+		<type>int</type>
+		<name>numColorsBits</name>
+		<desc>The number of bits to allocate the OpenGL color buffer with.</desc>
+	</argument1>
+	<argument2>
+		<type>int</type>
+		<name>numDepthBits</name>
+		<desc>The number of bits to allocate the OpenGL depth buffer with.</desc>
+	</argument2>
+	<argument3>
+		<type>BOOL</type>
+		<name>runFullScreen</name>
+		<desc>If this is set to TRUE, the view will be created so that it is fullscreen.</desc>
+	</argument3>
+</type>
+<desc>Initializes a GLView with the specified options.</desc>
+<example>
+// Initializes a 640 x 480 OpenGL view with 32 bits of depth and color, and is not fullscreen
+GLView* view = [ [ GLView alloc ] initWithFrame:NSMakeRect(0, 0, 640, 480) colorBits:32 depthBits:32 fullscreen:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/reshape.txt</path>
+		<name>- (void) reshape</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

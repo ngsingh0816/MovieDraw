@@ -1,0 +1,28 @@
+<name>scaleZ</name>
+<type>property float</type>
+<desc>The z component of the object's scale.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+float value = obj.scaleZ;
+// Alternative
+float value = [ obj scaleZ ];
+// Set the value
+obj.scaleZ = 5;
+// Alternative
+[ obj setScaleZ:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDObject/scaleX.txt</path>
+		<name>scaleX</name>
+	</entry2>
+</see>

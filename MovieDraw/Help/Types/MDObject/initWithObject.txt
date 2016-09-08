@@ -1,0 +1,34 @@
+<name>initWithObject</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created MDObject object</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The MDObject to create a new MDObject from</desc>
+</type>
+<desc>Creates and returns a new instance of an MDObject, which is a copy of the MDObject supplied. A MDObject created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+MDObject* obj1 = //...
+// Create an copy of obj1
+MDObject* obj = [ [ MDObject alloc ] initWithObject:obj ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/init.txt</path>
+		<name>- (id) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDObject/initWithInstance.txt</path>
+		<name>- (id) initWithInstance:(MDInstance*)inst</name>
+	</entry2>
+</see>

@@ -1,0 +1,33 @@
+<name>setAffectPosition</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>set</name>
+		<desc>Whether the object's position is affected by the default physics.</desc>
+	</argument0>
+</type>
+<desc>Sets whether the object's position is affected by the default physics.</desc>
+<example>
+MDObject* obj1 = //...
+// Sets the object's position to not be affected by the default physics
+[ obj1 setAffectPosition:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/affectPosition.txt</path>
+		<name>- (BOOL) affectPosition</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,33 @@
+<name>setInstance</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDInstance*</type>
+		<name>inst</type>
+		<desc>The instance to set the mesh's instance to</desc>
+	</argument0>
+</type>
+<desc>Sets the mesh's instance to a new one</desc>
+<example>
+MDMesh* mesh = //...
+MDInstance* inst = //...
+[ mesh setInstance:inst ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/instance.txt</path>
+		<name>- (MDInstance*) instance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

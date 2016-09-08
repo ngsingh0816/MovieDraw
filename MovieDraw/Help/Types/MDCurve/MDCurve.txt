@@ -1,0 +1,23 @@
+<name>MDCurve</name>
+<type>interface</type>
+<desc>A class that represents a collection of points that simulate a curve. There need to be at least two points for this to be an actual representation. If there are only two points, the curve is a line connecting the two point. If there are three points, the curve is a circle that goes through all three points. If there are four points, the curve is a Bezier Curve. More than four points is not supported at this time.</desc>
+<example>
+// Create an MDCurve
+MDCurve* obj = [ [ MDCurve alloc ] init ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/init.txt</path>
+		<name>init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

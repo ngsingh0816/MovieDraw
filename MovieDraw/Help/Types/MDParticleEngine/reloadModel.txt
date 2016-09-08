@@ -1,0 +1,28 @@
+<name>reloadModel</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Sets up the model data for the particle engine. This is called automatically when it needs updating.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Update the model
+[ obj reloadModel ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/vertices.txt</path>
+		<name>- (MDParticleVertex*) vertices</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

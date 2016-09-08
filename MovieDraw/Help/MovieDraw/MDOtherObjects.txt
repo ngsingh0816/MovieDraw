@@ -1,0 +1,41 @@
+<name>MDOtherObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of MDCameras, MDLights, MDParticleEngines, and MDCurves of all the other objects in a scene.</desc>
+	</return>
+</type>
+<desc>Returns a mutable array of all the other objects that are currently loaded. This is the preferred method for accessing these other objects. If you add or remove a MDLight to or from this array, or change the light type, you must call MDRebuildShaders() to ensure things work properly. Just tot be safe, every time you modify this array, you should probably call MDRebuildShaders().</desc>
+<example>
+// Gets the first other object
+id other = [ MDOtherObjects() objectAtIndex:0 ];
+// Checks if this is a light
+if ([ other isKindOfClass:[ MDLight class ] ])
+{
+	// It is a class, do something
+	DoSomething();
+}
+
+// Add a light to the scene
+MDLight* light = [ [ MDLight alloc ] init ];
+[ MDOtherObjects() addObject:light ];
+// It is saved in the array, so we can delete it
+[ light release ];
+// Rebuild the shaders to make sure everything is updated
+MDRebuildShaders();
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDSetOtherObjects.txt</path>
+		<name>MDSetInstancesNSArray* insts)</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

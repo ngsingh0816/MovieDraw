@@ -1,0 +1,27 @@
+<name>GetXY</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns the x and y components of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the x and y components of the vector.</desc>
+<example>
+MDVector3 vector = MDVector3Create(5, 0, 1);
+if (vector.GetXY() == MDVector2Create(5.0, 0.0))	// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/SetXY.txt</path>
+		<name>SetXY(float xVal, float yVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3/GetY.txt</path>
+		<name>GetY()</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>type</name>
+<type>property MDTextureType</type>
+<desc>The type of texture</desc>
+<example>
+MDTexture* texture = //...
+// Get the value
+MDTextureType value = texture.type;
+// Alternative
+MDTextureType value = [ texture type ];
+// Set the value
+texture.type = MD_TEXTURE_DIFFUSE;
+// Alternative
+[ texture setType:MD_TEXTURE_DIFFUSE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTextureType.txt</path>
+		<name>MDTextureType</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDTexture/head.txt</path>
+		<name>head</name>
+	</entry2>
+</see>

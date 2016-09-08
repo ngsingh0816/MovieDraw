@@ -1,0 +1,28 @@
+<name>position</name>
+<type>property MDVector3</type>
+<desc>The starting position of the particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+MDVector3 value = obj.position;
+// Alternative
+MDVector3 value = [ obj position ];
+// Set the value
+obj.position = MDVector3Create(0, 0, 0);
+// Alternative
+[ obj setPosition:MDVector3Create(0, 0, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/numberOfParticles.txt</path>
+		<name>numberOfParticles</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

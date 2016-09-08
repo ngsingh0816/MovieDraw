@@ -1,0 +1,44 @@
+<name>draw</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int*</type>
+		<name>program</name>
+		<desc>An array of uniform locations</desc>
+	</argument0>
+	<argument1>
+		<type>double</type>
+		<name>frameDuration</name>
+		<desc>The duration of the last frame in milliseconds</desc>
+	</argument1>
+	<argument2>
+		<type>unsigned int</type>
+		<name>desiredFPS</name>
+		<desc>The desired frames per second</desc>
+	</argument2>
+</type>
+<desc>Draws the particles with the specified options.</desc>
+<example>
+MDParticleEngine* obj = //...
+unsigned int* locations = //...
+// Draw
+[ obj draw:locations duration:MDElaspedTime() desired:MDFPS() ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/reloadModel.txt</path>
+		<name>- (void) reloadModel</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

@@ -1,0 +1,27 @@
+<name>antialias</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>Returns the current amount of antialiasing.</desc>
+	</return>
+</type>
+<desc>The amount of MSAA antialiasing that is done (1x, 2x, 4x, 8x, 16x). The default value is 16.</desc>
+<example>
+GLView* view = //...
+unsigned int anti = [ view antialias ];		// Returns 16
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setAntialias.txt</path>
+		<name>- (void) setAntialias:(unsigned int)anti</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

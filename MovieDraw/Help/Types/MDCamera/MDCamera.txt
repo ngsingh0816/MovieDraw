@@ -1,0 +1,23 @@
+<name>MDCamera</name>
+<type>interface</type>
+<desc>A class that represents a camera. It has configurable options such as position, look position, and orientation as well as a name.</desc>
+<example>
+// Create an MDCamera
+MDCamera* obj = [ [ MDCamera alloc ] init ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/init.txt</path>
+		<name>init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

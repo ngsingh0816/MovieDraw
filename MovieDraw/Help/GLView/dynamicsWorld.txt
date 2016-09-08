@@ -1,0 +1,15 @@
+<name>dynamicsWorld</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>btDiscreteDynamicsWorld*</type>
+		<desc>The dynamics world from Bullet Physics.</desc>
+	</return>
+</type>
+<desc>The dynamics world from Bullet Physics.</desc>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+</see>

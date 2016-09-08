@@ -1,0 +1,27 @@
+<name>GetY</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the y component of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the y component of the vector.</desc>
+<example>
+MDVector2 vector = MDVector2Create(0, 5);
+if (vector.GetY() == 5.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/SetY.txt</path>
+		<name>SetY(float xVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(float x, float y)</name>
+	</entry2>
+</see>

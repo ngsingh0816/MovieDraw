@@ -1,0 +1,32 @@
+<name>MDSetFPS</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>fps</name>
+		<desc>The new desired fps to set.</desc>
+	</argument0>
+</type>
+<desc>Sets the desired frames per second. The default is loaded from the MovieDraw project.</desc>
+<example>
+// Set FPS to 30
+MDSetFPS(30);
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDFPS.txt</path>
+		<name>MDFPS()</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

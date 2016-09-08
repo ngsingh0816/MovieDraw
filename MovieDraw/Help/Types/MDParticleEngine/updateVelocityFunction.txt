@@ -1,0 +1,31 @@
+<name>updateVelocityFunction</name>
+<type>property void (*)(MDParticle*, float, float, MDParticleEngine*)</type>
+<desc>The function to handle the creation of a new particle. The first argument is the newly created particle, the second argument is the a float on a scale from 0 to 1 on how far into the animation that particle is, with the third argument being a value that variates and animates it a little, and the fourth is the MDParticleEngine that owns the particle.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+void (*)(MDParticle*, float, float MDParticleEngine*) value = obj.updateVelocityFunction;
+// Alternative
+void (*)(MDParticle*, MDParticleEngine*) value = [ obj updateVelocityFunction ];
+// Set the value
+void function(MDParticle* p, float xVal, float aVal, MDParticleEngine* engine)
+{
+}
+obj.updateVelocityFunction = function;
+// Alternative
+[ obj setUpdateVelocityFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/image.txt</path>
+		<name>image</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>numberOfTextures</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned long</type>
+		<desc>The number of textures the mesh has.</desc>
+	</return>
+</type>
+<desc>Returns the number of textures that this mesh has.</desc>
+<example>
+MDMesh* mesh = //...
+// Get number of textures
+unsigned long num = [ mesh numberOfTextures ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/textureAtIndex.txt</path>
+		<name>- (MDTexture*) textureAtIndex:(unsigned long)index</name>
+	</entry2>
+</see>

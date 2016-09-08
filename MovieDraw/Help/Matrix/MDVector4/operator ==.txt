@@ -1,0 +1,33 @@
+<name>operator ==</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns TRUE if the two vectors have the same components.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>p</name>
+		<desc>The vector to compare to.</desc>
+	</argument0>
+</type>
+<desc>Compares two vectors.</desc>
+<example>
+MDVector4 vector = MDVector4Create(5, 0, 3, 1);
+MDVector4 vector2 = MDVector4Create(5, 0, 3, 1);
+if (vector == vector2)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/operator -=.txt</path>
+		<name>operator -=</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry2>
+</see>

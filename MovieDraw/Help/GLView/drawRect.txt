@@ -1,0 +1,32 @@
+<name>drawRect</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSRect</type>
+		<name>rect</name>
+		<desc>The rectangle to draw in. This parameter has no effect and is only there for conventions.</desc>
+	</argument0>
+</type>
+<desc>Called every frame to draw the frame. This can be called manually.</desc>
+<example>
+GLView* view = //...
+[ view drawRectNSMakeRect(0, 0, 0, 0) ];	// Draws a frame
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape.txt</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

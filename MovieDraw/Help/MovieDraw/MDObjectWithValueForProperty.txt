@@ -1,0 +1,43 @@
+<name>MDObjectWithValueForProperty</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDObject*</type>
+		<desc>The MDObject that matches the specified parameters. If no object is found, this will return nil.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>value</name>
+		<desc>The value of the property.</desc>
+	</argument0>
+	<argument1>
+		<type>NSString*</type>
+		<name>key</name>
+		<desc>The name of the property to test.</desc>
+	</argument1>
+</type>
+<desc>Returns the first object with that value for that property. There may be more than one object with those properties, so be sure to check that you have the right one.</desc>
+<example>
+// Gets the first object with "Red" as its "Color"
+MDObject* object = MDObjectWithValueForProperty(@"Red", @"Color");
+// Check if the object exists
+if (object)
+{
+	// It exists, do something
+	DoSomething();
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

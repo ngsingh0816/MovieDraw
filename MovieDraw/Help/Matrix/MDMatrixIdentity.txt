@@ -1,0 +1,32 @@
+<name>MDMatrixIdentity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns a newly created identity MDMatrix object.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix</name>
+		<desc>The matrix from which a new matrix will be created.</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a newly created identity MDMatrix object that is a 4x4 matrix that when multiplied by another matrix returns the original matrix. This is similar to glLoadIdentity().</desc>
+<example>
+MDMatrix old = // ...
+MDMatrix matrix = MDMatrixCreate(old) * MDMatrixIdentity();	// Creates a copy of the matrix old
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

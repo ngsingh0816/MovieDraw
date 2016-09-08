@@ -1,0 +1,28 @@
+<name>enableShadows</name>
+<type>property BOOL</type>
+<desc>Whether to enable shadows for that light. Disabling shadows is faster and uses less memory.</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+BOOL value = obj.enableShadows;
+// Alternative
+BOOL value = [ obj enableShadows ];
+// Set the value
+obj.enableShadows = TRUE;
+// Alternative
+[ obj setEnableShadows:TRUE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/ambientColor.txt</path>
+		<name>ambientColor</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

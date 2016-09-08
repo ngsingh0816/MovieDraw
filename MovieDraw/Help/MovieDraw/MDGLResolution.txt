@@ -1,0 +1,27 @@
+<name>MDGLResolution</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSSize</type>
+		<desc>The resolution of the GLWindow and GLView.</desc>
+	</return>
+</type>
+<desc>Returns the resolution of the GLWindow and GLView.</desc>
+<example>
+// Gets the current resolution
+NSSize resolution = MDGLResolution();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetGLResolution.txt</path>
+		<name>MDSetGLResolution(NSSize resolution)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

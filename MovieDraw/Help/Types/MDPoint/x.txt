@@ -1,0 +1,28 @@
+<name>x</name>
+<type>property float</type>
+<desc>The x component of the point's position.</desc>
+<example>
+MDPoint* point = //...
+// Get the value
+float value = point.x;
+// Alternative
+float value = [ point x ];
+// Set the value
+point.x = 5;
+// Alternative
+[ point setX:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/y.txt</path>
+		<name>y</name>
+	</entry2>
+</see>

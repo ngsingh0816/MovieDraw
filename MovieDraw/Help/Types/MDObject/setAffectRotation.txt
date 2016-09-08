@@ -1,0 +1,33 @@
+<name>setAffectRotation</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>set</name>
+		<desc>Whether the object's rotation is affected by the default physics.</desc>
+	</argument0>
+</type>
+<desc>Sets whether the object's rotation is affected by the default physics.</desc>
+<example>
+MDObject* obj1 = //...
+// Sets the object's rotation to not be affected by the default physics
+[ obj1 setAffectRotation:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/affectRotation.txt</path>
+		<name>- (BOOL) affectRotation</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

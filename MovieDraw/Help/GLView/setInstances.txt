@@ -1,0 +1,33 @@
+<name>setInstances</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSArray*</type>
+		<name>insts</name>
+		<desc>An array of MDInstance*'s.</desc>
+	</argument0>
+</type>
+<desc>Sets the instances to the desired value.</desc>
+<example>
+GLView* view = //...
+// Removes all instances
+[ view setInstances:[ NSArray array ] ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/instances.txt</path>
+		<name>- (NSMutableArray*) instances</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/objects.txt</path>
+		<name>- (NSMutableArray*) objects</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/otherObjects.txt</path>
+		<name>- (NSMutableArray*) otherObjects</name>
+	</entry2>
+</see>

@@ -1,0 +1,35 @@
+<name>MDSetReshapeFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSSize)</type>
+		<name>func</name>
+		<desc>The function to set it to. The size is the new size of the window after the reshape.</desc>
+	</argument0>
+</type>
+<desc>Sets the window reshape function to the one supplied. This function is called every time the window is reshape.</desc>
+<example>
+// Sets the function
+void function(NSSize size)
+{
+}
+MDSetReshapeFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setReshapeFunction.txt</path>
+		<name>- (void) setReshapeFunction:(void (*)(NSSize))keyF</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetDrawFunction.txt</path>
+		<name>MDSetDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

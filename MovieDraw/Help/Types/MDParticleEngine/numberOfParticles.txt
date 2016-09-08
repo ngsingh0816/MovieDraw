@@ -1,0 +1,28 @@
+<name>numberOfParticles</name>
+<type>property unsigned long</type>
+<desc>The number of max particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+unsigned long value = obj.numberOfParticles;
+// Alternative
+unsigned long value = [ obj numberOfParticle ];
+// Set the value
+obj.numberOfParticles = 1000;
+// Alternative
+[ obj setNumberOfParticles:1000 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/particleLife.txt</path>
+		<name>particleLife</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

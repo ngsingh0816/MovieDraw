@@ -1,0 +1,27 @@
+<name>MDSkyboxCorrection</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>The skybox correction for seams.</desc>
+	</return>
+</type>
+<desc>Returns the skybox correction for seams.</desc>
+<example>
+// Gets the skybox correction
+float correction = MDSkyboxCorrection();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetSkyboxCorrection.txt</path>
+		<name>MDSetSkyboxCorrection(float correction)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

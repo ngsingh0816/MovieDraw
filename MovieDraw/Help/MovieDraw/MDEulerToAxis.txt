@@ -1,0 +1,38 @@
+<name>MDEulerToAxis</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The axis from the Euler angles</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>rot</name>
+		<desc>The Euler angles (x axis rotation, y axis rotation, z axis rotation) in degrees</desc>
+	</argument0>
+	<argument1>
+		<type>float*</type>
+		<name>angle</name>
+		<desc>The function sets this value to the angle for which the axis need to rotate about.</desc>
+	</argument1>
+</type>
+<desc>Converts a Euler rotation (x, y, z) into a rotation about the axis.</desc>
+<example>
+// Get the axis-angle representation for (60, 45, 90)
+float angle = 0;
+MDVector3 axis = MDEulerToAxis(MDVector3Create(60, 45, 90), &angle);
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDRotate.txt</path>
+		<name>MDRotate(MDVector3 point, MDVector3 around, float xrot, float yrot, float zrot)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,43 @@
+<name>setKeyFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSArray*)</type>
+		<name>keyF</name>
+		<desc>The function to set to. The array argument is an array of NSNumber values with the key codes of all the keys that are down.</desc>
+	</argument0>
+</type>
+<desc>Sets a user function that is called every frame with the current keys that are pressed.</desc>
+<example>
+void function(NSArray* keys)
+{
+	// Does something if the W key is currently being pressed
+	for (unsigned long z = 0; z \< [ keys count ]; z++)
+	{
+		unsigned short key = [ [ keys objectAtIndex:z ] unsignedShortValue ];
+		if (key == 'w' || key == 'W')
+			DoSomething();
+	}
+}
+GLView* view = //...
+// Sets the function
+[ view setKeyFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

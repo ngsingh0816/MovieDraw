@@ -1,0 +1,28 @@
+<name>oneShot</name>
+<type>property BOOL</type>
+<desc>Whether stop the particle engine after it has animated one full time (it does not recreate particles).</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+BOOL value = obj.oneShot;
+// Alternative
+BOOL value = [ obj oneShot ];
+// Set the value
+obj.oneShot = TRUE;
+// Alternative
+[ obj setOneShot:TRUE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/tail.txt</path>
+		<name>tail.txt</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

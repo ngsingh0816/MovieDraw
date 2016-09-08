@@ -1,0 +1,28 @@
+<name>texture</name>
+<type>property unsigned int</type>
+<desc>The OpenGL texture number.</desc>
+<example>
+MDTexture* texture1 = //...
+// Get the value
+unsigned int value = texture1.texture;
+// Alternative
+unsigned int value = [ texture1 texture ];
+// Set the value
+texture1.texture = 5;
+// Alternative
+[ texture1 setTexture:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDTexture/textureLoaded.txt</path>
+		<name>textureLoaded</name>
+	</entry2>
+</see>

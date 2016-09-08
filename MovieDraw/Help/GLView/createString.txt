@@ -1,0 +1,53 @@
+<name>createString</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>string</name>
+		<desc>The string to draw.</desc>
+	</argument0>
+	<argument1>
+		<type>NSColor*</type>
+		<name>text</name>
+		<desc>The color of the text.</desc>
+	</argument1>
+	<argument2>
+		<type>double</type>
+		<name>dsize</name>
+		<desc>The size of the text.</desc>
+	</argument2>
+	<argument3>
+		<type>NSString*</type>
+		<name>fontName</name>
+		<desc>The font name of the text.</desc>
+	</argument3>
+</type>
+<desc>Creates a string on the screen with the desired parameters.</desc>
+<example>
+// Draws "Hello" in the upper left corner of the view
+GLView* view = //...
+GLString* string = [ view createString:@"Hello" textColor:[ NSColor whiteColor ]
+	withSize:14 withFontName:@"Helvetica" ];
+[ view drawString:string atLocation:NSMakePoint(0, 0) rotation:0 center:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/drawString.txt</path>
+		<name>- (void) drawString:(GLString*)string atLocation:(NSPoint)location rotation:(float)rot center:(BOOL)align</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/writeString.txt</path>
+		<name>- (void) writeString: (NSString*) str textColor: (NSColor*) text 
+			boxColor: (NSColor*) box borderColor: (NSColor*) border
+		  atLocation: (NSPoint) location withSize: (double) dsize 
+		withFontName: (NSString*) fontName rotation:(float) rot center:(BOOL)align</name>
+	</entry2>
+</see>

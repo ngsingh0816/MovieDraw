@@ -1,0 +1,28 @@
+<name>spotDirection</name>
+<type>property MDVector3</type>
+<desc>The point the light it facing (The light's direction). (Only directional lights and spot lights)</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+MDVector3 value = obj.spotDirection;
+// Alternative
+MDVector3 value = [ obj spotDirection ];
+// Set the value
+obj.spotDirection = MDVector3Create(0, 1, 0);
+// Alternative
+[ obj setSpotDirection:MDVector3Create(0, 1, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/spotExp.txt</path>
+		<name>spotExp</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>spotAngle</name>
+<type>property float</type>
+<desc>The angle from 0 to 90 for the spot light's cone. Currently this has no effect. (Only spotlights)</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+float value = obj.spotAngle;
+// Alternative
+float value = [ obj spotAngle ];
+// Set the value
+obj.spotAngle = 0.5;
+// Alternative
+[ obj setSpotAngle:0.5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/constAtt.txt</path>
+		<name>constAtt</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

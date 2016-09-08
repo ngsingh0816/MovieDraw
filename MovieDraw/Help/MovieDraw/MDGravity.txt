@@ -1,0 +1,27 @@
+<name>MDGravity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The gravity in three dimensions.</desc>
+	</return>
+</type>
+<desc>Returns the gravity in three dimensions. The default value is (0, 0, 0).</desc>
+<example>
+// Gets the gravity
+MDVector3 gravity = MDGravity();
+</example>
+<see>
+	<entry0>
+		<path>/GLView/MDSetGravity.txt</path>
+		<name>MDSetGravity(MDVector3 gravity)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

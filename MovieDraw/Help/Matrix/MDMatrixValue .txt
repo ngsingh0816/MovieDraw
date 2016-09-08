@@ -1,0 +1,47 @@
+<name>MDMatrixValue</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix for which the data will be set.</desc>
+	</argument0>
+	<argument1>
+		<type>int</type>
+		<name>row</name>
+		<desc>The row of the value to set.</desc>
+	</argument1>
+	<argument2>
+		<type>int</type>
+		<name>column</name>
+		<desc>The column of the value to set.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>value</name>
+		<desc>The value to set at the specified row and column.</desc>
+	</argument3>
+</type>
+<desc>Sets the value at the specified row and column.</desc>
+<example>
+MDMatrix matrix = // ...
+MDMatrixValue(matrix, 0, 2, 5);	// Sets the value at the first row, third column to 5
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixValue.txt</path>
+		<name>MDMatrixValue(MDMatrix matrix, int row, int column)</name>
+	</entry2>
+</see>

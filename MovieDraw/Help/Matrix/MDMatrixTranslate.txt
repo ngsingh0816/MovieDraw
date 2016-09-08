@@ -1,0 +1,47 @@
+<name>MDMatrixTranslate</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>x</name>
+		<desc>The amount to translate in the x direction.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>y</name>
+		<desc>The amount to translate in the y direction.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>z</name>
+		<desc>The amount to translate in the z direction.</desc>
+	</argument3>
+</type>
+<desc>Translates a matrix by the specified amount. This moves all vectors transformed by this matrix and is similar to glTranslatef(). It is usually used for the model view matrix.</desc>
+<example>
+MDMatrix matrix = // ...
+MDMatrixTranslate(&matrix, 5, 0, 0);	// Translates 5 units along the x axis
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixTranslate .txt</path>
+		<name>MDMatrixTranslate(MDMatrix* matrix, MDVector3 translate)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixRotate .txt</path>
+		<name>MDMatrixRotate(MDMatrix matrix1, MDVector3 axis, float angle)</name>
+	</entry2>
+</see>

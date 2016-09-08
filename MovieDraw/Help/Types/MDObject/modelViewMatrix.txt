@@ -1,0 +1,27 @@
+<name>modelViewMatrix</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the object's model view transformation</desc>
+	</return>
+</type>
+<desc>Returns the object's model view transformation which is a matrix based off the translate, scale, and rotation of the object.</desc>
+<example>
+MDObject* obj1 = //...
+MDMatrix matrix = [ obj modelViewMatix ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

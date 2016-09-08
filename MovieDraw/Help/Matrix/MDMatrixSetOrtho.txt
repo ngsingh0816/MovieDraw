@@ -1,0 +1,53 @@
+<name>MDMatrixSetOrtho</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>left</name>
+		<desc>The left clipping plane.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>right</name>
+		<desc>The right clipping plane.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>bottom</name>
+		<desc>The bottom clipping plane.</desc>
+	</argument3>
+	<argument4>
+		<type>float</type>
+		<name>top</name>
+		<desc>The top clipping plane.</desc>
+	</argument4>
+</type>
+<desc>Sets up an orthographic projection matrix that allows orthographic transformations of points in three dimensional space. It is commonly used to create a two dimensional plane for two dimensional graphics. This is similar to gluOrtho2D().</desc>
+<example>
+MDMatrix matrix = MDMatrixIdentity();
+// Sets up a orthographic projection matrix with a 640 x 480 resolution
+MDMatrixSetOrtho(&matrix, 0, 640, 480, 0);
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixSetPerspective.txt</path>
+		<name>MDMatrixSetPerspective(MDMatrix* matrix, float fovy, float aspectRatio, float znear, float zfar)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixLookAt.txt</path>
+		<name>MDMatrixLookAt(MDMatrix* matrix, MDVector3 eyePosition, MDVector3 center, MDVector3 up)</name>
+	</entry2>
+</see>

@@ -1,0 +1,35 @@
+<name>addTexture</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDTexture*</type>
+		<name>tex</name>
+		<desc>The texture to add</desc>
+	</argument0>
+</type>
+<desc>Adds a texture to the mesh. If you add a texture after the scene has been loaded, you must call loadNewTextures.</desc>
+<example>
+MDMesh* mesh = //...
+MDTexture* texture = //...
+[ mesh addTexture:texture ];
+// We don't need the texture anymore since its saved in the mesh
+[ texture release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/loadNewTextures.txt</path>
+		<name>- (void) loadNewTextures</name>
+	</entry2>
+</see>

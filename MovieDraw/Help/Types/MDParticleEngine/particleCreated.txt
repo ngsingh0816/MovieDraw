@@ -1,0 +1,31 @@
+<name>particleCreatedFunction</name>
+<type>property void (*)(MDParticle*, MDParticleEngine*)</type>
+<desc>The function to handle the creation of a new particle. The first argument is the newly created particle, and the second is the MDParticleEngine that owns it.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+void (*)(MDParticle*, MDParticleEngine*) value = obj.particleCreatedFunction;
+// Alternative
+void (*)(MDParticle*, MDParticleEngine*) value = [ obj particleCreatedFunction ];
+// Set the value
+void function(MDParticle* p, MDParticleEngine* engine)
+{
+}
+obj.particleCreatedFunction = function;
+// Alternative
+[ obj setParticleCreatedFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/updateVelocityFunction.txt</path>
+		<name>updateVelocityFunction</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

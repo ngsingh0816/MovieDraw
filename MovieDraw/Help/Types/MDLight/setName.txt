@@ -1,0 +1,33 @@
+<name>setName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>Sets the light's name.</desc>
+	</argument0>
+</type>
+<desc>Sets the light's name.</desc>
+<example>
+MDLight* obj = //...
+// Sets the light's name to "Light 1"
+[ obj setName:@"Light 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/name.txt</path>
+		<name>- (NSString*) name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

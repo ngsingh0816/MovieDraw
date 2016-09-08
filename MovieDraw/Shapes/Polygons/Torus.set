@@ -1,0 +1,113 @@
+void main()
+{
+    NSTextField* label = nil;
+    label = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 15, 90, 17) ];
+    [ label setStringValue:@"Slices X:" ];
+    [ label setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label setBezeled:NO ];
+    [ label setDrawsBackground:NO ];
+    [ label setEditable:NO ];
+    [ label setSelectable:NO ];
+    [ view addSubview:label ];
+    NSTextField* label2 = nil;
+    label2 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(73, 15, 240, 22) ];
+    [ label2 setStringValue:Format(@"%i", slicesX) ];
+    [ label2 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ view addSubview:label2 ];
+	NSTextField* label3 = nil;
+    label3 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 40, 90, 17) ];
+    [ label3 setStringValue:@"Slices Y:" ];
+    [ label3 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label3 setBezeled:NO ];
+    [ label3 setDrawsBackground:NO ];
+    [ label3 setEditable:NO ];
+    [ label3 setSelectable:NO ];
+    [ view addSubview:label3 ];
+    NSTextField* label4 = nil;
+    label4 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(72, 40, 328, 22) ];
+    [ label4 setStringValue:Format(@"%i", slicesY) ];
+    [ label4 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ view addSubview:label4 ];
+	NSTextField* label5 = nil;
+    label5 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 65, 90, 17) ];
+    [ label5 setStringValue:@"Inner Radius:" ];
+    [ label5 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label5 setBezeled:NO ];
+    [ label5 setDrawsBackground:NO ];
+    [ label5 setEditable:NO ];
+    [ label5 setSelectable:NO ];
+    [ view addSubview:label5 ];
+    NSTextField* label6 = nil;
+    label6 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(102, 65, 298, 22) ];
+    [ label6 setStringValue:Format(@"%f", innerRadius) ];
+    [ label6 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ view addSubview:label6 ];
+	NSTextField* label7 = nil;
+    label7 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 90, 90, 17) ];
+    [ label7 setStringValue:@"Outer Radius:" ];
+    [ label7 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label7 setBezeled:NO ];
+    [ label7 setDrawsBackground:NO ];
+    [ label7 setEditable:NO ];
+    [ label7 setSelectable:NO ];
+    [ view addSubview:label7 ];
+    NSTextField* label8 = nil;
+    label8 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(105, 90, 295, 22) ];
+    [ label8 setStringValue:Format(@"%f", outerRadius) ];
+    [ label8 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ view addSubview:label8 ];
+    NSButton* set = [ [ NSButton alloc ] initWithFrame:NSMakeRect(316, 12, 90, 32) ];
+    [ set setTitle:@"Set" ];
+    [ set setTarget:@selector(set).target ];
+    [ set setAction:@selector(set) ];
+    [ set setButtonType:0 ];
+    [ set setBezelStyle:1 ];
+    [ view addSubview:set ];
+}
+
+void set()
+{
+	slicesX = [ label2 doubleValue ];
+	NSNumber* bool = LessThan(slicesX, 2);
+	if ([ bool doubleValue ])
+	{
+		slicesX = [ [ NSNumber numberWithDouble:2 ] doubleValue ];
+		[ label2 setStringValue:Format(@"%i", slicesX) ];
+	}
+	NSNumber* bool2 = MoreThan(slicesX, 360);
+	if ([ bool2 doubleValue ])
+	{
+		slicesX = [ [ NSNumber numberWithDouble:180 ] doubleValue ];
+		[ label2 setStringValue:Format(@"%i", slicesX) ];
+	}
+	
+	slicesY = [ label4 doubleValue ];
+	NSNumber* bool = LessThan(slicesY, 2);
+	if ([ bool doubleValue ])
+	{
+		slicesY = [ [ NSNumber numberWithDouble:2 ] doubleValue ];
+		[ label4 setStringValue:Format(@"%i", slicesY) ];
+	}
+	NSNumber* bool2 = MoreThan(slicesY, 360);
+	if ([ bool2 doubleValue ])
+	{
+		slicesY = [ [ NSNumber numberWithDouble:360 ] doubleValue ];
+		[ label4 setStringValue:Format(@"%i", slicesY) ];
+	}
+	innerRadius = [ label6 doubleValue ];
+	outerRadius = [ label8 doubleValue ];
+}
+
+void update()
+{
+}
+
+void draw()
+{
+}
+
+@end
+slicesX = 36.0
+slicesY = 36.0
+innerRadius = 5.0
+outerRadius = 0.4

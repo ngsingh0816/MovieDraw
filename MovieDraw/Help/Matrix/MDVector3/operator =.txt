@@ -1,0 +1,32 @@
+<name>operator =</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the vector.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>p</name>
+		<desc>The vector to set the current vector to.</desc>
+	</argument0>
+</type>
+<desc>Sets the current vector to the new vector.</desc>
+<example>
+MDVector3 vector = MDVector3Create(5, 0, 1);
+vector = MDVector3Create(1, 0, 5);		// Gives the vector (1, 0, 5)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/operator -.txt</path>
+		<name>operator -</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3/operator +.txt</path>
+		<name>operator +</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(float x, float y)</name>
+	</entry2>
+</see>

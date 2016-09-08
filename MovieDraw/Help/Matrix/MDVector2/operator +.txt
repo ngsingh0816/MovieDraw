@@ -1,0 +1,33 @@
+<name>operator +</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns the two vectors added together.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>p</name>
+		<desc>The vector to add to the other vector.</desc>
+	</argument0>
+</type>
+<desc>Adds two vectors together.</desc>
+<example>
+MDVector2 vector = MDVector2Create(5, 0);
+MDVector2 vector2 = MDVector2Create(1, 3);
+MDVector vector3 = vector + vector2;		// Gives the vector (6, 3)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/operator +=.txt</path>
+		<name>operator +=</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/operator -.txt</path>
+		<name>operator -</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(float x, float y)</name>
+	</entry2>
+</see>

@@ -1,0 +1,33 @@
+<name>MDVector3Create</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns a newly created MDVector3 object that is a copy of the vector supplied.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>v</name>
+		<desc>The vector from which a new vector will be created.</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a newly created MDVector3 object that is a three component vector.</desc>
+<example>
+MDVector3 old = // ...
+MDVector3 vector = MDVector3Create(old);	// Creates a copy of the vector old
+if (MDVector3Create(old).y == old.y)		// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3Create .txt</path>
+		<name>MDVector3Create(float x, float y, float z)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3Magnitude.txt</path>
+		<name>MDVector3Magnitude(MDVector3 v)</name>
+	</entry2>
+</see>

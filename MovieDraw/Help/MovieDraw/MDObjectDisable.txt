@@ -1,0 +1,32 @@
+<name>MDObjectDisable</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object that will be disabled.</desc>
+	</argument0>
+</type>
+<desc>Disables default physics to act on the object, as though the object did not exist.</desc>
+<example>
+// Disable physics for the "One" object of "Ball"
+MDObjectDisable(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDObjectEnable.txt</path>
+		<name>MDObjectEnable(MDObject* obj)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

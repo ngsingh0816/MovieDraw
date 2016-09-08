@@ -1,0 +1,20 @@
+<name>MDTextureType</name>
+<type>enum</type>
+<desc>MD_TEXTURE_DIFFUSE is a texture that affects color, MD_TEXTURE_BUMP is a texture that affects normals, MD_TEXTURE_TERRAIN_ALPHA is a texture map for terrain, and MD_TEXTURE_TERRAIN_DIFFUSE are the textures that affect color for the terrain.</desc>
+<example>
+MDTextureType type = MD_TEXTURE_DIFFUSE;
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/type.txt</path>
+		<name>type</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

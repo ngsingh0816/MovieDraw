@@ -1,0 +1,37 @@
+<name>setPoints</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>std::vector\<MDVector3\></type>
+		<name>p</name>
+		<desc>The new point vector array to set the curve's points to.</desc>
+	</argument0>
+</type>
+<desc>Sets the points of the curve.</desc>
+<example>
+MDCurve* obj = //...
+std::vector\<MDVector3\> points;
+// Add two points
+points.push_back(MDVector3Create(0, 0, 0));
+points.push_back(MDVector3Create(1, 1, 0));
+// Set these points
+[ obj setPoints:points ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCurve/curvePoints.txt</path>
+		<name>- (std::vector<MDVector3>) curvePoints</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

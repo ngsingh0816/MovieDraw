@@ -1,0 +1,28 @@
+<name>startColor</name>
+<type>property MDVector4</type>
+<desc>The starting color for the particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+MDVector4 value = obj.startColor;
+// Alternative
+MDVector4 value = [ obj startColor ];
+// Set the value
+obj.startColor = MDVector4Create(1, 0, 0, 1);
+// Alternative
+[ obj setStartColor:MDVector4Create(1, 0, 0, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/endColor.txt</path>
+		<name>endColor.txt</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>physicsType</name>
+<type>property unsigned char</type>
+<desc>The way to handle physics collisions. A value of MD_OBJECT_PHYSICS_EXACT means that the collisions will happen when something collides with this object exactly. A value of MD_OBJECT_PHYSICS_BOUNDINGBOX means that collisions will happen when something collides with the object's bounding box. A value of MD_OBJECT_PHYSICS_BOUNDINGSPHERE means that collisions will happen when something collides with the object's bounding sphere. A value of MD_OBJECT_PHYSICS_CYLINDER_X means that collisions will happen when something collides with the object's bounding clyinder that is symmetrical over the x axis. A value of MD_OBJECT_PHYSICS_CYLINDER_Y means that collisions will happen when something collides with the object's bounding clyinder that is symmetrical over the y axis. A value of MD_OBJECT_PHYSICS_CYLINDER_Z means that collisions will happen when something collides with the object's bounding clyinder that is symmetrical over the z axis.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+unsigned char value = obj.physicsType;
+// Alternative
+unsigned char value = [ obj physicsType ];
+// Set the value
+obj.physicsType = MD_OBJECT_PHYSICS_EXACT;
+// Alternative
+[ obj setPhysicsType:MD_OBJECT_PHYSICS_EXACT ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry2>
+</see>

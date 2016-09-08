@@ -1,0 +1,28 @@
+<name>position</name>
+<type>property MDVector3</type>
+<desc>The light's position.</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+MDVector3 value = obj.position;
+// Alternative
+MDVector3 value = [ obj position ];
+// Set the value
+obj.position = MDVector3Create(0, 1, 0);
+// Alternative
+[ obj setPosition:MDVector3Create(0, 1, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/spotDirection.txt</path>
+		<name>spotDirection</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

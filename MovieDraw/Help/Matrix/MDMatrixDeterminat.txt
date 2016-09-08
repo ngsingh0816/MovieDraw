@@ -1,0 +1,32 @@
+<name>MDMatrixDeterminat</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the determinant of the matrix.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix</name>
+		<desc>The matrix to find the determinant of.</desc>
+	</argument0>
+</type>
+<desc>Returns the determinant of a matrix.</desc>
+<example>
+MDMatrix matrix = // ...
+float determinant = MDMatrixDeterminant(matrix);
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixInverse.txt</path>
+		<name>MDMatrixInverse(MDMatrix matrix)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixMultiply.txt</path>
+		<name>MDMatrixMultiply(MDMatrix matrix1, MDMatrix matrix2)</name>
+	</entry2>
+</see>

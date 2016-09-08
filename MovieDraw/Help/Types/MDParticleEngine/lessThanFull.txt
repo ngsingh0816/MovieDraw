@@ -1,0 +1,28 @@
+<name>lessThanFull</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns whether the particle engine is less than full</desc>
+	</return>
+</type>
+<desc>Returns whether the particle engine is less than full, which is basically TRUE if liveParticles is not equal to the number of particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get if it is full
+BOOL full = [ obj lessThanFull ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/draw.txt</path>
+		<name>- (void) draw:(unsigned int*)program duration:(double)frameDuration desired:(unsigned int)desiredFPS</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

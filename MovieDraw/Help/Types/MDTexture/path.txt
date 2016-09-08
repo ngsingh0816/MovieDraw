@@ -1,0 +1,28 @@
+<name>path</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the texture's image path.</desc>
+	</return>
+</type>
+<desc>Returns the texture's image path.</desc>
+<example>
+MDTexture* texture = //...
+// Gets texture's path
+NSString* path = [ texture path ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/setPath.txt</path>
+		<name>- (void) setPath:(NSString*)tex</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

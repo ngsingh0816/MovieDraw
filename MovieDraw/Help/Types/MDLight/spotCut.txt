@@ -1,0 +1,28 @@
+<name>spotCut</name>
+<type>property float</type>
+<desc>The cosine angle cutoff (from 0 to 1) for the spot light's cone. (Only spotlights)</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+float value = obj.spotCut;
+// Alternative
+float value = [ obj spotCut ];
+// Set the value
+obj.spotCut = 0.5;
+// Alternative
+[ obj setSpotCut:0.5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/spotAngle.txt</path>
+		<name>spotAngle</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

@@ -1,0 +1,52 @@
+<name>MDMatrixSetPerspective</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>fovy</name>
+		<desc>The field of view in degrees in the y direction.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>aspectRatio</name>
+		<desc>The aspect ratio of the viewport - width / height.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>znear</name>
+		<desc>The near clipping plane of the projection. This must be greater than zero.</desc>
+	</argument3>
+	<argument4>
+		<type>float</type>
+		<name>zfar</name>
+		<desc>The far clipping plane of the projection.</desc>
+	</argument4>
+</type>
+<desc>Sets up a perspective projection matrix that allows perspective transformations of points in three dimensional space. This is similar to gluPerspectivef().</desc>
+<example>
+MDMatrix matrix = MDMatrixIdentity();
+MDMatrixSetPerspective(&matrix, 45.0, 640.0 / 480.0, 0.1, 100.0);	// Sets up a perspective projection matrix
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixLookAt.txt</path>
+		<name>MDMatrixLookAt(MDMatrix* matrix, MDVector3 eyePosition, MDVector3 center, MDVector3 up)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixSetOrtho.txt</path>
+		<name>MDMatrixSetOrtho(MDMatrix* matrix, float left, float right, float bottom, float top)</name>
+	</entry2>
+</see>

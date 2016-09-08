@@ -1,0 +1,35 @@
+<name>lightData</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available</desc>
+	</return>
+	<argument0>
+		<type>float*</type>
+		<name>data</name>
+		<desc>A array of 26 floats that will be the destination for the data of the light.</desc>
+	</argument0>
+</type>
+<desc>Returns the light's data in the form of 26 floats. The order is as follows (with the number of floats it takes in parenthesis): ambient color (4), diffuse color (4), specular color (4), position (4 - (x, y, z, 1)), spot direction (3), spot exponent (1), spot cutoff (1), spot angle (1), constant attenuation (1), linear attenuation (1), quadratic attenuation (1), enable shadows (1).</desc>
+<example>
+MDLight* obj = //...
+// Get the light's data
+float data[26];
+[ obj lightData:data ];
+// Data now contains the light's data
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/initWithMDLight.txt</path>
+		<name>- (MDLight*) initWithMDLight:(MDLight*)light</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

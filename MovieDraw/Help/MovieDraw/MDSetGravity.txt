@@ -1,0 +1,32 @@
+<name>MDSetGravity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>gravity</name>
+		<desc>A vector of three dimensional gravity.</desc>
+	</argument0>
+</type>
+<desc>Sets the current gravity. This has no effect is the default physics are not enabled.</desc>
+<example>
+// Sets Earth's gravity
+MDSetGravity(MDVector3Create(0, -9.8, 0));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDGravity.txt</path>
+		<name>MDGravity()</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

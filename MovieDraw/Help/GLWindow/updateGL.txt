@@ -1,0 +1,30 @@
+<name>updateGL</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>This is called every frame (usually 60 times a second) to update the GLView. That means it will allow the GLView to draw a frame. If this method is called manually, it will only do anything if the GLView can draw.</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+// Draw a frame
+[ window updateGL ];	// Not really necessary since it will be called regardless by a timer
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setUpGLView.txt</path>
+		<name>- (void) setUpGLView</name>
+	</entry2>
+</see>

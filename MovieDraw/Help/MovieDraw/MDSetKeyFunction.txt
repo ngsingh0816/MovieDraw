@@ -1,0 +1,47 @@
+<name>MDSetKeyFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSArray*)</type>
+		<name>func</name>
+		<desc>The function to set it to. The array argument is an array of all keys that are down.</desc>
+	</argument0>
+</type>
+<desc>Sets the key function to the one supplied. This function is called every frame with an array of NSNumbers containing the keys that are currently pressed.</desc>
+<example>
+// Sets the function
+void function(NSArray* array)
+{
+	// Check if the 'W' key is currently down
+	for (unsigned long z = 0; z < [ array count ]; z++)
+	{
+		// Get the key
+		unsigned short key = [ [ array objectAtIndex:z ] unsignedShortValue ];
+		// Check if its 'W'
+		if (key == 'w' || key == 'W')
+		{
+			// 'W' is down, do something
+			DoSomething();
+		}
+	}
+}
+MDSetKeyFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setKeyFunction.txt</path>
+		<name>- (void) setKeyFunction:(void (*)(NSArray*))keyF</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetDrawFunction.txt</path>
+		<name>MDSetDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

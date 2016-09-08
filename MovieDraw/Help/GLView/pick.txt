@@ -1,0 +1,38 @@
+<name>pick</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The index of the object at the specified point. If this returns -1, then there was no object at that point.</desc>
+	</return>
+	<argument0>
+		<type>NSPoint</type>
+		<name>point</name>
+		<desc>The point in the GLView in pixels to pick.</desc>
+	</argument0>
+</type>
+<desc>This function returns the index of the closest object at the specified point in the window.</desc>
+<example>
+GLView* view = //...
+// See what object is in the middle of the screen
+unsigned int object = [ view pick:NSMakePoint([ view bounds ].size.width / 2, [ view bounds ].size.height / 2);
+if (object != -1)
+{
+	MDObject* obj = [ [ view objects ] objectAtIndex:object ];
+	// Do something
+}
+</example>
+<see>
+	<entry0>
+		<path>/GLView/rebuildShaders.txt</path>
+		<name>- (void) rebuildShaders</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

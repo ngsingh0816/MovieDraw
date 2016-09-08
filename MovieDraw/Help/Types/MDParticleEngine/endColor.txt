@@ -1,0 +1,28 @@
+<name>endColor</name>
+<type>property MDVector4</type>
+<desc>The ending color for the particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+MDVector4 value = obj.endColor;
+// Alternative
+MDVector4 value = [ obj endColor ];
+// Set the value
+obj.endColor = MDVector4Create(1, 0, 0, 0);
+// Alternative
+[ obj setEndColor:MDVector4Create(1, 0, 0, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/particleSize.txt</path>
+		<name>particleSize</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

@@ -1,0 +1,33 @@
+<name>MDVector2Create</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns a newly created MDVector2 object that is a copy of the vector supplied.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>v</name>
+		<desc>The vector from which a new vector will be created.</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a newly created MDVector2 object that is a two component vector.</desc>
+<example>
+MDVector2 old = // ...
+MDVector2 vector = MDVector2Create(old);	// Creates a copy of the vector old
+if (MDVector2Create(old).y == old.y)		// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(float x, float y)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Magnitude.txt</path>
+		<name>MDVector2Magnitude(MDVector2 v)</name>
+	</entry2>
+</see>

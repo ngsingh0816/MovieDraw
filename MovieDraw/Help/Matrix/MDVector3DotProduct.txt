@@ -1,0 +1,36 @@
+<name>MDVector3DotProduct</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the dot product (component-wise multiplication) of the vectors.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>v1</name>
+		<desc>The first vector to calculate from.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>v2</name>
+		<desc>The second vector to calculate from.</desc>
+	</argument1>
+</type>
+<desc>Returns the dot product (component-wise multiplication) of the vector.</desc>
+<example>
+float dot = MDVector3DotProduct(MDVector3Create(3, 4, 5), MDVector3Create(2, 3, 5));	// Returns 43
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(MDVector3 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3Magnitude.txt</path>
+		<name>MDVector3Magnitude(MDVector3 v)</name>
+	</entry2>
+</see>

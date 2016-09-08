@@ -1,0 +1,32 @@
+<name>MDSetFullScreen</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>full</name>
+		<desc>Whether or not to make the app fullscreen.</desc>
+	</argument0>
+</type>
+<desc>Sets the app to fullscreen or windowed mode. The default is windowed.</desc>
+<example>
+// Sets app to fullscreen
+MDSetFullScreen(YES);
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDFullScreen.txt</path>
+		<name>MDFullScreen()</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

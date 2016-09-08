@@ -1,0 +1,37 @@
+<name>MDSetMouseUpFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSEvent*)</type>
+		<name>func</name>
+		<desc>The function to set it to. The event argument is a typical NSEvent event.</desc>
+	</argument0>
+</type>
+<desc>Sets the mouse up function to the one supplied. This function is called every time the mouse is released.</desc>
+<example>
+// Sets the function
+void function(NSEvent* event)
+{
+	// Gives the point released in pixels
+	NSPoint point = [ event locationInWindow ];
+}
+MDSetMouseUpFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setMouseUpFunction.txt</path>
+		<name>- (void) setMouseUpFunction:(void (*)(NSEvent*))keyF</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetDrawFunction.txt</path>
+		<name>MDSetDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

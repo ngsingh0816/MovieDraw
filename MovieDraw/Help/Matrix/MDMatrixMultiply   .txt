@@ -1,0 +1,37 @@
+<name>MDMatrixMultiply</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the product of two matrices.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>matrix1</name>
+		<desc>The original matrix.</desc>
+	</argument0>
+	<argument1>
+		<type>MDMatrix</type>
+		<name>matrix2</name>
+		<desc>The matrix to multiply by.</desc>
+	</argument1>
+</type>
+<desc>Creates and returns a newly created MDMatrix object that is a 4x4 matrix from multiplying the two matrices together.</desc>
+<example>
+MDMatrix old = // ...
+MDMatrix matrix = MDMatrixMultiply(old, old);	// matrix = old * old
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator *.txt</path>
+		<name>operator *</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixCreate.txt</path>
+		<name>MDMatrixCreate(MDMatrix matrix)</name>
+	</entry2>
+</see>

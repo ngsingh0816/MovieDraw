@@ -1,0 +1,28 @@
+<name>diffuseColor</name>
+<type>property MDVector4</type>
+<desc>The light's diffuse color.</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+MDVector4 value = obj.diffuseColor;
+// Alternative
+MDVector4 value = [ obj diffuseColor ];
+// Set the value
+obj.diffuseColor = MDVector4Create(0, 1, 0, 1);
+// Alternative
+[ obj setDiffuseColor:MDVector4Create(0, 1, 0, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/specularColor.txt</path>
+		<name>specularColor</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

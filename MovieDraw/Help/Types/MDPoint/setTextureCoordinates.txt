@@ -1,0 +1,37 @@
+<name>setTextureCoordinates</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>p</name>
+		<desc>The new position to set in (x, y) format. Each of these components should be a value from zero to one.</desc>
+	</argument0>
+</type>
+<desc>Sets the three dimensional position of the point.</desc>
+<example>
+// Initializes a point at (3, 0, -2) with the normal (0, 1, 0) and texture coordinate (0, 1)
+MDPoint* point = [ [ MDPoint alloc ] init ];
+[ point setPosition:MDVector3Create(3, 0, -2) ];
+[ point setNormal:MDVector3Create(0, 1, 0) ];
+[ point setTextureCoordinates:MDVector2Create(0, 1) ];
+// Cleanup
+[ point release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/init.txt</path>
+		<name>- (id) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

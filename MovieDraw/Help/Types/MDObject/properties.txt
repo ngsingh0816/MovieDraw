@@ -1,0 +1,28 @@
+<name>properties</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableDictionary*</type>
+		<desc>Returns a mutable dictionary of the object's properties</desc>
+	</return>
+</type>
+<desc>Returns a mutable dictionary of the object's properties.</desc>
+<example>
+MDObject* obj1 = //...
+// Get the object's color property
+NSString* color = [ [ obj1 properties ] objectForKey:@"Color" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,36 @@
+<name>MDVector2DotProduct</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the dot product (component-wise multiplication) of the vectors.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>v1</name>
+		<desc>The first vector to calculate from.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector2</type>
+		<name>v2</name>
+		<desc>The second vector to calculate from.</desc>
+	</argument1>
+</type>
+<desc>Returns the dot product (component-wise multiplication) of the vector.</desc>
+<example>
+float dot = MDVector2DotProduct(MDVector2Create(3, 4), MDVector2Create(2, 3));	// Returns 18
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(MDVector2 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Magnitude.txt</path>
+		<name>MDVector2Magnitude(MDVector2 v)</name>
+	</entry2>
+</see>

@@ -1,0 +1,35 @@
+<name>MDSetLoadSceneFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSString*)</type>
+		<name>func</name>
+		<desc>The function to set it to. The string argument is the name of the scene that is loaded.</desc>
+	</argument0>
+</type>
+<desc>Sets the load scene function to the one supplied. This function is called every time a scene has finished loading.</desc>
+<example>
+// Sets the function
+void function(NSString* scene)
+{
+}
+MDSetLoadSceneFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDLoadScene.txt</path>
+		<name>MDLoadScene(NSString* scene)</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetDrawFunction.txt</path>
+		<name>MDSetDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

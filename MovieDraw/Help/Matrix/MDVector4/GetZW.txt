@@ -1,0 +1,27 @@
+<name>GetZW</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector2</type>
+		<desc>Returns the z and w components of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the z and w components of the vector.</desc>
+<example>
+MDVector4 vector = MDVector4Create(5, 0, 1, 2);
+if (vector.GetZW() == MDVector2Create(1.0, 2.0))	// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/SetZW.txt</path>
+		<name>SetZW(float yVal, float zVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/GetY.txt</path>
+		<name>GetY()</name>
+	</entry2>
+</see>

@@ -1,0 +1,35 @@
+<name>setAction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>SEL</type>
+		<name>act</name>
+		<desc>The selector of the action.</desc>
+	</argument0>
+</type>
+<desc>This sets the action to the desired selector. This action is called by target (which is set by setTarget) and is called when an updateGL call ends.</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+[ window setTarget:self ];
+[ window setAction:@selector(frameEnded:) ];
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/action.txt</path>
+		<name>- (SEL) action</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setTarget.txt</path>
+		<name>- (void) setTarget:(id) tar</name>
+	</entry2>
+</see>

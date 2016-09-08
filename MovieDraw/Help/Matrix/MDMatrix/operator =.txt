@@ -1,0 +1,32 @@
+<name>operator =</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMatrix</type>
+		<desc>Returns the matrix.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix</type>
+		<name>p</name>
+		<desc>The matrix to set the current matrix to.</desc>
+	</argument0>
+</type>
+<desc>Sets the current matrix to the new matrix</desc>
+<example>
+MDMatrix matrix = //...
+matrix = MDMatrixIdentity();		// Returns MDMatrixIdentity()
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/operator +.txt</path>
+		<name>operator +</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrix/operator -.txt</path>
+		<name>operator -</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixCreate.txt</path>
+		<name>MDMatrixCreate(MDMatrix matrix)</name>
+	</entry2>
+</see>

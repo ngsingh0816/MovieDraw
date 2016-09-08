@@ -1,0 +1,27 @@
+<name>MDWindowTitle</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>The current window title.</desc>
+	</return>
+</type>
+<desc>Returns the current window title.</desc>
+<example>
+// Gets the title
+NSString* title = MDWindowTitle();
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDSetWindowTitle.txt</path>
+		<name>MDSetWindowTitle(NSString* name)</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

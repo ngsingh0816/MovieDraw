@@ -1,0 +1,29 @@
+<name>init</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created MDInstance object</desc>
+	</return>
+</type>
+<desc>Creates and returns a new instance of an MDInstance. A MDInstance created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+// Create an MDInstance
+MDInstance* inst = [ [ MDInstance alloc ] init ];
+// Cleanup
+[ inst release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/beginMesh.txt</path>
+		<name>- (void) beginMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/initWithInstance.txt</path>
+		<name>- (id) initWithInstance:(MDInstance*)inst</name>
+	</entry2>
+</see>

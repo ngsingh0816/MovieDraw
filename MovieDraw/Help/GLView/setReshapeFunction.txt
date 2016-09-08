@@ -1,0 +1,36 @@
+<name>setReshapeFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSSize)</type>
+		<name>keyF</name>
+		<desc>The function to set to. The size argument is the new size of the window.</desc>
+	</argument0>
+</type>
+<desc>Sets a user function that is called every time the window is reshape.</desc>
+<example>
+void function(NSSize newSize)
+{
+}
+GLView* view = //...
+// Sets the function
+[ view setReshapeFunction:view ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

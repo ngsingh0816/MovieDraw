@@ -1,0 +1,29 @@
+<name>cameraMidPoint</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the camera's location.</desc>
+	</return>
+</type>
+<desc>Returns the camera's location that can be set with setCamera or setCameraMidPoint. The default location is (0, 0, -20).</desc>
+<example>
+GLView* view = //...
+// Sets the camera's position
+[ view setCameraMidPoint:MDVector3Create(5, 0, 1) ];
+MDVector3 vector = [ view cameraMidPoint ];		// Returns (5, 0, 1)
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCameraMidPoint.txt</path>
+		<name>- (void) setCameraMidPoint:(MDVector3)point</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraRotation.txt</path>
+		<name>- (MDVector3) cameraRotation</name>
+	</entry2>
+</see>

@@ -1,0 +1,32 @@
+<name>MDBoundingBoxRotate</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDRect</type>
+		<desc>The bounding box of the object. This is a struct that has x, y, and z components, as well as width, height, and depth components. It is essentially a three dimensional rectangle.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose bounding box will be returned.</desc>
+	</argument0>
+</type>
+<desc>Returns bounding box of a rotated object.</desc>
+<example>
+// Gets the bounding box for the "One" object of "Ball"
+MDRect rect = MDBoundingBoxRotate(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDRotate.txt</path>
+		<name>MDRotate(MDVector3 point, MDVector3 around, float xrot, float yrot, float zrot)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

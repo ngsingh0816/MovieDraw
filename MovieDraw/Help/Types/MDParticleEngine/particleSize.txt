@@ -1,0 +1,28 @@
+<name>endColor</name>
+<type>property float</type>
+<desc>The size of the particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+float value = obj.particleSize;
+// Alternative
+float value = [ obj particleSize ];
+// Set the value
+obj.particleSize = 10;
+// Alternative
+[ obj setParticleSize:10 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/velocities.txt</path>
+		<name>velocities</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

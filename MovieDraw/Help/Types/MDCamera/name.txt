@@ -1,0 +1,28 @@
+<name>name</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the camera's name.</desc>
+	</return>
+</type>
+<desc>Returns the camera's name.</desc>
+<example>
+MDCamera* obj = //...
+// Gets camera's name
+NSString* name = [ obj name ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/setName.txt</path>
+		<name>- (void) setName:(NSString*)name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

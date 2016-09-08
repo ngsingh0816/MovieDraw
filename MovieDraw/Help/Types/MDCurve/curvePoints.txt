@@ -1,0 +1,30 @@
+<name>curvePoints</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>std::vector\<MDVector3\>*</name>
+		<desc>The points of the curve returned as a pointer so they can be edited.</desc>
+	</return>
+</type>
+<desc>Returns the curve's points.</desc>
+<example>
+MDCurve* obj = //...
+// Get the points
+std::vector\<MDVector3\>* points = [ obj curvePoints ];
+// Change the second one to a new point
+points-\>data[1] = MDVector3Create(3, 4, 5);
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCurve/draw.txt</path>
+		<name>- (void) draw</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>calculateAlphaObjects</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Calculates a list of all the objects that use alpha.</desc>
+<example>
+GLView* view = //...
+// Calculate a list of the objects that use alpha
+[ view calculateAlphaObjects ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/alphaObjects.txt</path>
+		<name>- (NSIndexSet*) alphaObjects</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/setObjects.txt</path>
+		<name>- (void) setObjects:(NSArray*)objs</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/setOtherObjects.txt</path>
+		<name>- (void) setOtherObjects:(NSArray*)objs</name>
+	</entry2>
+</see>

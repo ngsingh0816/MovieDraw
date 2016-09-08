@@ -1,0 +1,21 @@
+<name>GLView</name>
+<type>interface</type>
+<desc>A subclass of NSOpenGLView that is the main drawing view and handles all the data and interaction of the application.</desc>
+<example>
+// Initializes a 640 x 480 OpenGL view with 32 bits of depth and color, and is not fullscreen
+GLView* view = [ [ GLView alloc ] initWithFrame:NSMakeRect(0, 0, 640, 480) colorBits:32 depthBits:32 fullscreen:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

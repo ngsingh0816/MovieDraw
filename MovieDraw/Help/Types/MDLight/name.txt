@@ -1,0 +1,28 @@
+<name>name</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the light's name.</desc>
+	</return>
+</type>
+<desc>Returns the light's name.</desc>
+<example>
+MDLight* obj = //...
+// Gets light's name
+NSString* name = [ obj name ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/setName.txt</path>
+		<name>- (void) setName:(NSString*)name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

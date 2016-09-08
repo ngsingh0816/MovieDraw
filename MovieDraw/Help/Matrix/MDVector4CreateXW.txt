@@ -1,0 +1,41 @@
+<name>MDVector4CreateXW</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>Returns a newly created MDVector4 object.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>xw</name>
+		<desc>The x and w components of the vector.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>y</name>
+		<desc>The y or second component of the vector.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>z</name>
+		<desc>The z or third component of the vector.</desc>
+	</argument2>
+</type>
+<desc>Creates and returns a newly created MDVector4 object that is a four component vector.</desc>
+<example>
+MDVector4 vector = MDVector4CreateXW(MDVector2Create(5, 0), 2, 1);	// Creates the vector (5, 2, 1, 0)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4Create.txt</path>
+		<name>MDVector4Create(MDVector4 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4Magnitude.txt</path>
+		<name>MDVector4Magnitude(MDVector4 v)</name>
+	</entry2>
+</see>

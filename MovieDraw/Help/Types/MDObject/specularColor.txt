@@ -1,0 +1,27 @@
+<name>specularColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>Returns the specular color</desc>
+	</return>
+</type>
+<desc>Returns the specular color of the object, which is equal to the instance's specular color.</desc>
+<example>
+MDObject* obj1 = //...
+MDVector4 color = [ obj1 specularColor ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

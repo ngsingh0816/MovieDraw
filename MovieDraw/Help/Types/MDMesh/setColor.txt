@@ -1,0 +1,33 @@
+<name>setColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>col</type>
+		<desc>The instance to set the mesh's color to</desc>
+	</argument0>
+</type>
+<desc>Sets the mesh's color to a new one</desc>
+<example>
+MDMesh* mesh = //...
+// Sets the mesh's color to red
+[ mesh setColor:MDVector4Create(1, 0, 0, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/color.txt</path>
+		<name>- (MDVector4) color</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

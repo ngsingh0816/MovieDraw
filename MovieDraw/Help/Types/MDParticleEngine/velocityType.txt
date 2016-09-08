@@ -1,0 +1,28 @@
+<name>velocityType</name>
+<type>property unsigned int</type>
+<desc>The animation to do. 0) Fire 1) Fire 2 / Smoke 2) Form Rectangle 3) Form Circle 4) Grow 5) Shrink 6) Rectangle Explosion 7) Sphere Explosion 8) Dissolve 9) Fountain 10)Sin wave (all others do nothing). This will only have an effect if the custom velocity function is not changed.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+unsigned int value = obj.velocityType;
+// Alternative
+unsigned int value = [ obj velocityType ];
+// Set the value
+obj.velocityType = 2;
+// Alternative
+[ obj setVelocityType:2 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/particleCreatedFunction.txt</path>
+		<name>particleCreatedFunction</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

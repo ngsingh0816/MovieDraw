@@ -1,0 +1,95 @@
+void main()
+{
+    NSTextField* label = nil;
+    label = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 15, 90, 17) ];
+    [ label setStringValue:@"Angle:" ];
+    [ label setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ label setBezeled:NO ];
+    [ label setDrawsBackground:NO ];
+    [ label setEditable:NO ];
+    [ label setSelectable:NO ];
+    [ view addSubview:label ];
+    NSTextField* label2 = nil;
+    label2 = [ [ NSTextField alloc ] initWithFrame:NSMakeRect(15, 48, 90, 22) ];
+    [ label2 setStringValue:Format(@"%f", perValue) ];
+    [ label2 setFont:[ NSFont systemFontOfSize:[ NSFont systemFontSizeForControlSize:[ [ label cell ] controlSize ] ] ] ];
+    [ view addSubview:label2 ];
+    NSSlider* per = [ [ NSSlider alloc ] initWithFrame:NSMakeRect(60, 15, 324, 26) ];
+    [ per setMinValue:0 ];
+    [ per setMaxValue:1 ];
+	[ per setTarget:@selector(move).target ];
+	[ per setAction:@selector(move) ];
+    [ per setDoubleValue:perValue ];
+    [ per setNumberOfTickMarks:11 ];
+    [ per setContinuous:YES ];
+    [ view addSubview:per ];
+	NSButton* set = [ [ NSButton alloc ] initWithFrame:NSMakeRect(105, 46, 90, 32) ];
+	[ set setTitle:@"Set" ];
+	[ set setTarget:@selector(set).target ];
+	[ set setAction:@selector(set) ];
+	[ set setButtonType:0 ];
+	[ set setBezelStyle:1 ];
+	[ view addSubview:set ];
+	NSButton* but = [ [ NSButton alloc ] initWithFrame:NSMakeRect(210, 54, 110, 18) ];
+	[ but setTitle:@"Lock" ];
+	[ but setState:lockState ];
+	[ but setButtonType:3 ];
+	[ but setState:lockState ];
+	[ but setTarget:@selector(lock).target ];
+	[ but setAction:@selector(lock) ];
+	lock();
+	[ view addSubview:but ];
+}
+
+void move()
+{
+	[ label2 setStringValue:Format(@"%f", [ per doubleValue ]) ];
+	perValue = [ per doubleValue ];
+	[ view setNeedsDisplay:YES ];
+}
+
+void lock()
+{
+	lockValue = [ but state ];
+	[ per setAllowsTickMarkValuesOnly:[ but state ] ];
+	[ label2 setStringValue:Format(@"%f", [ per doubleValue ]) ];
+	[ view setNeedsDisplay:YES ];
+}
+
+void set()
+{
+	NSNumber* round = Round([ label2 doubleValue ], 1);
+	NSNumber* num1 = NotEqual([ label2 doubleValue ], [ round doubleValue ]);
+	if ([ num1 intValue ])
+	{
+		[ per setAllowsTickMarkValuesOnly:NO ];
+		[ but setState:0 ];
+	}
+	[ per setDoubleValue:[ label2 doubleValue ] ];
+	[ label2 setStringValue:Format(@"%f", [ per doubleValue ] ];
+	perValue = [ per doubleValue ];
+	[ view setNeedsDisplay:YES ];
+}
+
+void update()
+{
+}
+
+void draw()
+{
+	[ view lockFocus ];
+	NSBezierPath* triangle = [ [ NSBezierPath alloc ] init ];
+	NSNumber* num1 = Multiply(389, [ per doubleValue ]);
+	NSNumber* num2 = Add([ num1 floatValue ], 15);
+	[ triangle moveToPoint:NSMakePoint([ num2 floatValue ], 85) ];
+	[ triangle lineToPoint:NSMakePoint(404, 315) ];
+	[ triangle lineToPoint:NSMakePoint(15, 315) ];
+	[ triangle closePath ];
+	[ [ NSColor blueColor ] set ];
+	[ triangle fill ];
+	[ view unlockFocus ];
+}
+
+@end
+perValue = 0.5
+lockState = 1

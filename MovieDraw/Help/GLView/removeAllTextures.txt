@@ -1,0 +1,27 @@
+<name>removeAllTextures</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>This removes all the textures loaded in the scene. You can load them again by calling loadNewTextures.</desc>
+<example>
+GLView* view = //...
+[ view removeAllTextures ];		// Remove all textures
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/loadNewTextures.txt</path>
+		<name>- (void) loadNewTextures</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/drawRect.txt</path>
+		<name>- (void) drawRect:(NSRect)rect</name>
+	</entry2>
+</see>

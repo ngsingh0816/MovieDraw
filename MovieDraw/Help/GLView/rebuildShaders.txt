@@ -1,0 +1,27 @@
+<name>rebuildShaders</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Calls to recreate the OpenGL shaders for this GLView. This should be called every time a MDLight is added or removed from the GLView's other objects or its light type is changed. This is called automatically when a scene is loaded.</desc>
+<example>
+GLView* view = //...
+[ view rebuildShaders ];		// Recreates the shaders
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/initWithFrame.txt</path>
+		<name>- (id) initWithFrame:(NSRect)frame colorBits:(int)numColorBits depthBits:(int)numDepthBits fullscreen:(BOOL)runFullScreen</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

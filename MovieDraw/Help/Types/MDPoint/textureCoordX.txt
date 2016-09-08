@@ -1,0 +1,28 @@
+<name>textureCoordX</name>
+<type>property float</type>
+<desc>The x component of the point's texture coordinate.</desc>
+<example>
+MDPoint* point = //...
+// Get the value
+float value = point.textureCoordX;
+// Alternative
+float value = [ point textureCoordX ];
+// Set the value
+point.textureCoordX = 5;
+// Alternative
+[ point setTextureCoordX:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/textureCoordY.txt</path>
+		<name>textureCoordY</name>
+	</entry2>
+</see>

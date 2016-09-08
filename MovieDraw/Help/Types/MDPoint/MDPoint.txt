@@ -1,0 +1,25 @@
+<name>MDPoint</name>
+<type>interface</type>
+<desc>A class that represents a single point. This point contains a three dimensional position and normal vector and two dimensional texture coordinates. It is used in conjunction with other points to represent meshes and objects.</desc>
+<example>
+// Initializes a point at (3, 0, -2) with the normal (0, 1, 0)
+MDPoint* point = [ [ MDPoint alloc ] init ];
+[ point setPosition:MDVector3Create(3, 0, -2) ];
+[ point setNormal:MDVector3Create(0, 1, 0) ];
+// Cleanup
+[ point release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

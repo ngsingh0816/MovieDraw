@@ -1,0 +1,37 @@
+<name>indexAtIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The index at that index</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>index</type>
+		<desc>The index in the array of indices</desc>
+	</argument0>
+</type>
+<desc>Returns the index at the specified index. If the supplied index is greater than the index array's size, an exception will be raised.</desc>
+<example>
+MDMesh* mesh = //...
+// Checks if it has at least one index
+if ([ mesh numberOfIndices ])
+{
+	// Gets the first texture
+	unsigned int first = [ mesh indexAtIndex:0 ];
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/indices.txt</path>
+		<name>- (NSMutableArray*) indices</name>
+	</entry2>
+</see>

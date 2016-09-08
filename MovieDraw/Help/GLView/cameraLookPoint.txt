@@ -1,0 +1,29 @@
+<name>cameraLookPoint</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns the camera's look position.</desc>
+	</return>
+</type>
+<desc>Returns the camera's look position that can be set with setCamera or setCameraLookPoint. The default location is (0, 0, 0).</desc>
+<example>
+GLView* view = //...
+// Sets the camera's look position
+[ view setCameraLookPoint:MDVector3Create(5, 0, 1) ];
+MDVector3 vector = [ view cameraLookPoint ];		// Returns (5, 0, 1)
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCameraLookPoint.txt</path>
+		<name>- (void) setCameraLookPoint:(MDVector3)point</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraRotation.txt</path>
+		<name>- (MDVector3) cameraRotation</name>
+	</entry2>
+</see>

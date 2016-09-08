@@ -1,0 +1,28 @@
+<name>target</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The GLWindow's target.</desc>
+	</return>
+</type>
+<desc>This function returns the target that was specified by setTarget. The default value is nil.</desc>
+<example>
+GLWindow* window = //...
+[ window setTarget:self ];
+[ window target ];		// Returns self
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setTarget.txt</path>
+		<name>- (void) setTarget:(id) tar</name>
+	</entry2>
+</see>

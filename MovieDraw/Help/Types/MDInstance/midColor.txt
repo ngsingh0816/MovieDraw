@@ -1,0 +1,27 @@
+<name>midColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>Returns the mid color</desc>
+	</return>
+</type>
+<desc>Returns the mid color of the instance, which is equal to the average of all of the meshes' colors.</desc>
+<example>
+MDInstance* instance = //...
+MDVector4 color = [ instance midColor ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/setMidColor.txt</path>
+		<name>- (void) setMidColor:(MDVector4)color</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

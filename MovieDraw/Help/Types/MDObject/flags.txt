@@ -1,0 +1,28 @@
+<name>flags</name>
+<type>property unsigned char</type>
+<desc>The physics flags for the object that control whether the position or rotation of the object are affected.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+unsigned char value = obj.flags;
+// Alternative
+unsigned char value = [ obj flags ];
+// Set the value
+obj.flags = MDOBJECT_AFFECT_POSITION | MD_OBJECT_AFFECT_ROTATION;
+// Alternative
+[ obj setFlags:MDOBJECT_AFFECT_POSITION | MD_OBJECT_AFFECT_ROTATION ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry2>
+</see>

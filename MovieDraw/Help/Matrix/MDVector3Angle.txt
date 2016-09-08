@@ -1,0 +1,36 @@
+<name>MDVector3Angle</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the angle between the two vectors in degrees.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>v1</name>
+		<desc>The first vector to calculate from.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>v2</name>
+		<desc>The second vector to calculate from.</desc>
+	</argument1>
+</type>
+<desc>Returns the angle between the two vectors (acos(DotProduct(v1, v2) / Magnitude(v1) / Magnitude(v2)).</desc>
+<example>
+float angle = MDVector3Angle(MDVector3Create(3, 4, 5), MDVector3Create(2, 3, 4));	// Returns 3.68819804
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(MDVector3 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3Magnitude.txt</path>
+		<name>MDVector3Magnitude(MDVector3 v)</name>
+	</entry2>
+</see>

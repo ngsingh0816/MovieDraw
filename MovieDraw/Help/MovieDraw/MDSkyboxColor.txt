@@ -1,0 +1,27 @@
+<name>MDSkyboxColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>The skybox color.</desc>
+	</return>
+</type>
+<desc>Returns the skybox color.</desc>
+<example>
+// Gets the skybox color
+MDVector4 color = MDSkyboxColor();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetSkyboxColor.txt</path>
+		<name>MDSetSkyboxColor(MDVector4 color)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

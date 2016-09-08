@@ -1,0 +1,33 @@
+<name>MDVector4Create</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector4</type>
+		<desc>Returns a newly created MDVector4 object that is a copy of the vector supplied.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>v</name>
+		<desc>The vector from which a new vector will be created.</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a newly created MDVector4 object that is a four component vector.</desc>
+<example>
+MDVector4 old = // ...
+MDVector4 vector = MDVector4Create(old);	// Creates a copy of the vector old
+if (MDVector4Create(old).y == old.y)		// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4Create .txt</path>
+		<name>MDVector4Create(float x, float y, float z, float w)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4Magnitude.txt</path>
+		<name>MDVector4Magnitude(MDVector4 v)</name>
+	</entry2>
+</see>

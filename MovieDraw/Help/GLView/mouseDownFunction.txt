@@ -1,0 +1,32 @@
+<name>mouseDownFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void (*)(NSEvent*)</type>
+		<desc>Returns the function pointer for the function.</desc>
+	</return>
+	</type>
+<desc>Returns the function pointer for the function.</desc>
+<example>
+void something(NSEvent* event)
+{
+}
+GLView* view = //...
+// Sets the function
+[ view setMouseDownFunction:something ];
+[ view mouseDownFunction ](nil);		// Executes the function "something"
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

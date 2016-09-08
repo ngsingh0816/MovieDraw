@@ -1,0 +1,28 @@
+<name>head</name>
+<type>property unsigned int</type>
+<desc>The texture's head texture (for use with MD_TEXTURE_TERRAIN_DIFFUSE only).</desc>
+<example>
+MDTexture* texture = //...
+// Get the value
+unsigned int value = texture.head;
+// Alternative
+unsigned int value = [ texture head ];
+// Set the value
+texture.head = 5;
+// Alternative
+[ texture setHead:5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDTexture/size.txt</path>
+		<name>size</name>
+	</entry2>
+</see>

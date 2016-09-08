@@ -1,0 +1,29 @@
+<name>cameraOrientation</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns whether the camera is used like a real camera or like a viewing window.</desc>
+	</return>
+</type>
+<desc>Returns whether the camera is used like a real camera or like a viewing window. If it returns TRUE, it simulates a camera, but if returns FALSE, it only simulates moves in the model view matrix.</desc>
+<example>
+GLView* view = //...
+// Sets the camera's use
+[ view setCameraUse:YES ];
+BOOL use = [ view cameraUse ];		// Returns YES
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCameraUse.txt</path>
+		<name>- (void) setCameraUse:(BOOL)use</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry2>
+</see>

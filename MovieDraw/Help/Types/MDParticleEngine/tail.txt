@@ -1,0 +1,28 @@
+<name>tail</name>
+<type>property BOOL</type>
+<desc>Whether the particle system leaves a trail behind it.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+BOOL value = obj.tail;
+// Alternative
+BOOL value = [ obj tail ];
+// Set the value
+obj.tail = TRUE;
+// Alternative
+[ obj setTail:TRUE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/flow.txt</path>
+		<name>flow</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

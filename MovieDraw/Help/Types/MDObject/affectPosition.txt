@@ -1,0 +1,28 @@
+<name>affectPosition</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>BOOL</type>
+		<desc>Returns whether the default physics affect this object's position.</desc>
+	</return>
+</type>
+<desc>Returns whether the default physics affect this object's position.</desc>
+<example>
+MDObject* obj1 = //...
+// See if position is affected
+BOOL affect = [ obj1 affectPosition ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/setAffectPosition.txt</path>
+		<name>- (void) setAffectPosition:(BOOL)set</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,36 @@
+<name>MDVector3Create</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>Returns a newly created MDVector3 object.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>xy</name>
+		<desc>The x and y components of the vector.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>z</name>
+		<desc>The z or third component of the vector.</desc>
+	</argument1>
+</type>
+<desc>Creates and returns a newly created MDVector3 object that is a three component vector.</desc>
+<example>
+MDVector3 vector = MDVector3Create(MDVector2Create(5, 0), 1);	// Creates the vector (5, 0, 1)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(MDVector3 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3Magnitude.txt</path>
+		<name>MDVector3Magnitude(MDVector3 v)</name>
+	</entry2>
+</see>

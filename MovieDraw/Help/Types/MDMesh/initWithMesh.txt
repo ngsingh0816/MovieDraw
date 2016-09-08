@@ -1,0 +1,35 @@
+<name>initWithMesh</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created mesh</desc>
+	</return>
+	<argument0>
+		<type>MDMesh*</type>
+		<name>mesh</name>
+		<desc>The mesh to make a copy of</desc>
+	</argument0>
+</type>
+<desc>Creates a copy of a mesh. A mesh created by this method should be autoreleased or released when done.</desc>
+<example>
+MDMesh* mesh = //...
+// Create the mesh
+MDMesh* mesh2 = [ [ MDMesh alloc ] initWithMesh:mesh ];
+// Cleanup
+[ mesh2 release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/addTexture.txt</path>
+		<name>- (void) addTexture:(MDTexture*)tex</name>
+	</entry2>
+</see>

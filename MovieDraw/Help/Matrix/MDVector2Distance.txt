@@ -1,0 +1,36 @@
+<name>MDVector2Distance</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the distance between the two vectors.</desc>
+	</return>
+	<argument0>
+		<type>MDVector2</type>
+		<name>v1</name>
+		<desc>The first vector to calculate from.</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector2</type>
+		<name>v2</name>
+		<desc>The second vector to calculate from.</desc>
+	</argument1>
+</type>
+<desc>Returns the distance between the two vectors.</desc>
+<example>
+float distance = MDVector2Distance(MDVector2Create(3, 4), MDVector2Create(2, 3));	// Returns 1.4142135
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2Create.txt</path>
+		<name>MDVector2Create(MDVector2 p)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector2Magnitude.txt</path>
+		<name>MDVector2Magnitude(MDVector2 v)</name>
+	</entry2>
+</see>

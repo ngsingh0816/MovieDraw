@@ -1,0 +1,36 @@
+<name>setNormal</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>p</name>
+		<desc>The new normal to set in (x, y, z) format. It is expected that this value is normalized (the magnitude is equal to one - sqrt(x^2 + y^2 + z^2) is equal to one). </desc>
+	</argument0>
+</type>
+<desc>Sets the three dimensional normal vector of the point. The normal vector is the direction pointing away from a face. Since a point cannot be pointed away from, these are averaged with the other points of a face to determine which direction points away from it. Normals are typically used in lighting calculations.</desc>
+<example>
+// Initializes a point at (3, 0, -2) with the normal (0, 1, 0)
+MDPoint* point = [ [ MDPoint alloc ] init ];
+[ point setPosition:MDVector3Create(3, 0, -2) ];
+[ point setNormal:MDVector3Create(0, 1, 0) ];
+// Cleanup
+[ point release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/init.txt</path>
+		<name>- (id) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

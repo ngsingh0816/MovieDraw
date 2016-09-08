@@ -1,0 +1,32 @@
+<name>MDObjectPosition</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The position of the object.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose position will be returned.</desc>
+	</argument0>
+</type>
+<desc>Returns the object's position. This is the correct way to retrieve an object's position when using the default physics.</desc>
+<example>
+// Gets the position for the "One" object of "Ball"
+MDVector3 position = MDObjectPosition(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetObjectPosition.txt</path>
+		<name>MDSetObjectPosition(MDObject* obj, MDVector3 pos)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

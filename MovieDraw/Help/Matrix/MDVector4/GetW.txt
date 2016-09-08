@@ -1,0 +1,27 @@
+<name>GetW</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the w component of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the w component of the vector.</desc>
+<example>
+MDVector4 vector = MDVector4Create(0, 5, 1, 0);
+if (vector.GetW() == 0.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/SetW.txt</path>
+		<name>SetW(float wVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/GetX.txt</path>
+		<name>GetX()</name>
+	</entry2>
+</see>

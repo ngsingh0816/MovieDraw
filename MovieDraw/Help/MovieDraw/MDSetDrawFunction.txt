@@ -1,0 +1,37 @@
+<name>MDSetDrawFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)()</type>
+		<name>func</name>
+		<desc>The function to set it to.</desc>
+	</argument0>
+</type>
+<desc>Sets the draw function to the one supplied. This function is called at the beginning of every frame, but no drawing can be done in it. If you need a function that can also execute drawing commands, see MDSetCustomDrawFunction(void (*func)()).</desc>
+<example>
+// Sets the function
+void function()
+{
+	// Do stuff
+	DoSomething();
+}
+MDSetDrawFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setDrawFunction.txt</path>
+		<name>- (void) setDrawFunction:(void (*)())drawF</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetCustomDrawFunction.txt</path>
+		<name>MDSetCustomDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

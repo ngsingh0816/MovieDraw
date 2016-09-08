@@ -1,0 +1,28 @@
+<name>specularColor</name>
+<type>property MDVector4</type>
+<desc>The specular color for the instance.</desc>
+<example>
+MDInstance* inst = //...
+// Get the value
+MDVector4 value = inst.specularColor;
+// Alternative
+MDVector4 value = [ inst specularColor ];
+// Set the value
+inst.specularColor = MDVector4Create(1, 0, 0, 1);
+// Alternative
+[ inst setSpecularColor:MDVector4Create(1, 0, 0, 1) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry2>
+</see>

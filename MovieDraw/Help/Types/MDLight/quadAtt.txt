@@ -1,0 +1,28 @@
+<name>quadAtt</name>
+<type>property float</type>
+<desc>The quadratic attenuation for the light. (Only point and spot lights)</desc>
+<example>
+MDLight* obj = //...
+// Get the value
+float value = obj.quadAtt;
+// Alternative
+float value = [ obj quadAtt ];
+// Set the value
+obj.quadAtt = 0.5;
+// Alternative
+[ obj setQuadAtt:0.5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/lightType.txt</path>
+		<name>lightType</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

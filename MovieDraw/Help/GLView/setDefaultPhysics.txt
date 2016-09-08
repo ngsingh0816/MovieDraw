@@ -1,0 +1,33 @@
+<name>setDefaultPhysics</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>BOOL</type>
+		<name>physics</name>
+		<desc>Whether to use the default physics.</desc>
+	</argument0>
+</type>
+<desc>If physics is TRUE, GLView will use its own physics, otherwise, no physics will be used, and you are free to implement your own. The default value is YES.</desc>
+<example>
+GLView* view = //...
+// Disables physics
+[ view setDefaultPhysics:NO ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/defaultPhysics.txt</path>
+		<name>- (BOOL) defaultPhysics</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

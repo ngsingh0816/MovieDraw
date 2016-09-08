@@ -1,0 +1,34 @@
+<name>setTarget</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>id</type>
+		<name>tar</name>
+		<desc>The target to set to.</desc>
+	</argument0>
+</type>
+<desc>This sets the target to the desired instance. This target is the invoker of the action that can be set with setAction.</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+[ window setTarget:self ];
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/setAction.txt</path>
+		<name>- (void) setAction:(SEL) act</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/target.txt</path>
+		<name>- (id) target</name>
+	</entry2>
+</see>

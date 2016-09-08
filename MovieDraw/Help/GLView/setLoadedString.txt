@@ -1,0 +1,33 @@
+<name>setLoadedString</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>string</name>
+		<desc>The name of the loaded scene.</desc>
+	</argument0>
+</type>
+<desc>Sets the name of the loaded scene.</desc>
+<example>
+GLView* view = //...
+// Sets the scene name
+[ view setLoadedString:@"Scene 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/loadedString.txt</path>
+		<name>- (NSString*) loadedString</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry2>
+</see>

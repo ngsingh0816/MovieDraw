@@ -1,0 +1,33 @@
+<name>tangent</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</name>
+		<desc>Returns the tangent vector of the curve at the specified time.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>time</name>
+		<desc>The place on the curve normalized from 0 to 1</desc>
+	</argument0>
+</type>
+<desc>Returns the interpolated tangent vector at the specified position on the curve.</desc>
+<example>
+MDCurve* obj = //...
+// Get the tangent that is halfway
+MDVector3 tangent = [ obj tangent:0.5 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCurve/normal.txt</path>
+		<name>- (MDVector3) normal:(float)time</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

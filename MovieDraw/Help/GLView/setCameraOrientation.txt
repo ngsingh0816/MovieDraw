@@ -1,0 +1,33 @@
+<name>setCameraOrientation</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>orien</name>
+		<desc>The camera's new orientation in degrees.</desc>
+	</argument0>
+</type>
+<desc>Rotates the camera to the new orientation. If useCamera is set to FALSE by setCameraUse, then this will have no effect.</desc>
+<example>
+GLView* view = //...
+// Rotates the camera 90 degrees
+[ view setCameraOrientation:90 ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/cameraLookPoint.txt</path>
+		<name>- (MDVector3) cameraLookPoint</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraRotation.txt</path>
+		<name>- (MDVector3) cameraRotation</name>
+	</entry2>
+</see>

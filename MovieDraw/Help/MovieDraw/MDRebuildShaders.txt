@@ -1,0 +1,27 @@
+<name>MDRebuildShaders</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Sets the GLView to rebuild its shaders. This needs to be called every time a MDLight is added, removed, or its light type is changed so that the shaders can be updated accordingly. This function may cause a stutter in the next frame, so it wise to only do it during loading times.</desc>
+<example>
+// Rebuild the shaders
+MDRebuildShaders();
+</example>
+<see>
+	<entry0>
+		<path>/GLView/rebuildShaders.txt</path>
+		<name>- (void) rebuildShaders</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,32 @@
+<name>MDSetWindowTitle</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>The text to set the window's title to.</desc>
+	</argument0>
+</type>
+<desc>Sets the window's title.</desc>
+<example>
+// Sets the window's title to "MovieDraw"
+MDSetWindowTitle(@"MovieDraw");
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDWindowTitle.txt</path>
+		<name>MDWindowTitle()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

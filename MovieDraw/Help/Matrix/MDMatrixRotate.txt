@@ -1,0 +1,52 @@
+<name>MDMatrixRotate</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>x</name>
+		<desc>The x axis component to rotate around.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>y</name>
+		<desc>The y axis component to rotate around.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>z</name>
+		<desc>The z axis component to rotate around.</desc>
+	</argument3>
+	<argument4>
+		<type>float</type>
+		<name>angle</name>
+		<desc>The angle in degrees to rotate around the axis.</desc>
+	</argument4>
+</type>
+<desc>Rotates a matrix around an axis by the specified angle. This rotates all vectors transformed by this matrix and is similar to glRotatef(). It is usually used for the model view matrix.</desc>
+<example>
+MDMatrix matrix = // ...
+MDMatrixRotate(&matrix, 1, 0, 0, 90);	// Rotates 90 degrees along the x axis
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixRotate .txt</path>
+		<name>MDMatrixRotate(MDMatrix* matrix, MDVector3 axis, float angle)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixScale .txt</path>
+		<name>MDMatrixScale(MDMatrix matrix1, MDVector3 scale)</name>
+	</entry2>
+</see>

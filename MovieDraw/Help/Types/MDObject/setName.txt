@@ -1,0 +1,33 @@
+<name>setName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>Sets the object's name.</desc>
+	</argument0>
+</type>
+<desc>Sets the object's name.</desc>
+<example>
+MDObject* obj1 = //...
+// Sets the object's name to "Object 1"
+[ obj1 setName:@"Object 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/name.txt</path>
+		<name>- (NSString*) name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,27 @@
+<name>MDInstances</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>A mutable array of MDInstances of all the instances in a scene.</desc>
+	</return>
+</type>
+<desc>Returns a mutable array of all the instances that are currently loaded. This is the preferred method for accessing these instances.</desc>
+<example>
+// Gets the first instance
+MDInstance* instance = [ MDInstances() objectAtIndex:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDSetInstances.txt</path>
+		<name>MDSetInstancesNSArray* insts)</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry2>
+</see>

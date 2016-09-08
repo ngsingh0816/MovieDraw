@@ -1,0 +1,23 @@
+<name>MDInstance</name>
+<type>interface</type>
+<desc>A class that represents multiple meshes, which contain index data. The instance also contains the point data for those indices as well as some other properties.</desc>
+<example>
+// Creates a new MDInstance
+MDInstance* instance = [ [ MDInstance alloc ] init ];
+// Cleanup
+[ instance release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,37 @@
+<name>meshAtIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDMesh*</type>
+		<desc>The MDMesh at that index</desc>
+	</return>
+	<argument0>
+		<type>unsigned long</type>
+		<name>index</type>
+		<desc>The index in the array of meshes</desc>
+	</argument0>
+</type>
+<desc>Returns the MDMesh at the specified index. If the index is greater than the mesh array's size, an exception will be raised.</desc>
+<example>
+MDInstance* instance = //...
+// Checks if it has at least one mesh
+if ([ instance numberOfMeshes ])
+{
+	// Gets the first mesh
+	MDMesh* firstMesh = [ instance meshAtIndex:0 ];
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/meshes.txt</path>
+		<name>- (NSMutableArray*) meshes</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/numberOfMeshes.txt</path>
+		<name>- (unsigned long) numberOfMeshes</name>
+	</entry2>
+</see>

@@ -1,0 +1,27 @@
+<name>MDSkyboxDistance</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>The skybox's distance.</desc>
+	</return>
+</type>
+<desc>Returns the skybox's distance.</desc>
+<example>
+// Gets the skybox's distance
+float distance = MDSkyboxDistance();
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetSkyboxDistance.txt</path>
+		<name>MDSetSkyboxDistance(float distance)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

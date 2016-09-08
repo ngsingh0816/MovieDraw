@@ -1,0 +1,23 @@
+<name>MDTexture</name>
+<type>interface</type>
+<desc>A container for a texture for use with MDMesh.</desc>
+<example>
+// Create texture
+MDTexture* texture = [ [ MDTexture alloc ] init ];
+// Cleanup
+[ texture release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTextureType</path>
+		<name>MDTextureType</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/type.txt</path>
+		<name>type</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>liveParticles</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned long</type>
+		<desc>Returns the amount of live particles</desc>
+	</return>
+</type>
+<desc>Returns the amount of live particles.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the number of live particles
+unsigned long num = [ obj livePartcles ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/lessThanFull.txt</path>
+		<name>- (BOOL) lessThanFull</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

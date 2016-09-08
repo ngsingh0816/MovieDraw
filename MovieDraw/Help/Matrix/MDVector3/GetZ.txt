@@ -1,0 +1,27 @@
+<name>GetZ</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>float</type>
+		<desc>Returns the z component of the vector.</desc>
+	</return>
+</type>
+<desc>Returns the z component of the vector.</desc>
+<example>
+MDVector3 vector = MDVector3Create(0, 5, 1);
+if (vector.GetZ() == 1.0)			// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3/SetZ.txt</path>
+		<name>SetZ(float zVal)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector3/MDVector3.txt</path>
+		<name>MDVector3</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector3/GetX.txt</path>
+		<name>GetX()</name>
+	</entry2>
+</see>

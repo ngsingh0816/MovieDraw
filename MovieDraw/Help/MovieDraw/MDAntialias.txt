@@ -1,0 +1,27 @@
+<name>MDAntialias</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The amount of MSAA antialiasing to do.</desc>
+	</return>
+</type>
+<desc>Returns the amount of antialiasing that is done each frame (Really how many samples are drawn each frame - 1x, 2x, 4x, 8x, 16x). The default value is 16.</desc>
+<example>
+// Gets the antialias
+unsigned int anti = MDAntialias();
+</example>
+<see>
+	<entry0>
+		<path>/GLView/antialias.txt</path>
+		<name>- (unsigned int) antialias</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

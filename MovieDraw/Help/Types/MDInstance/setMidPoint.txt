@@ -1,0 +1,33 @@
+<name>setMidPoint</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>point</name>
+		<desc>The new point to set the mid point to</desc>
+	</argument0>
+</type>
+<desc>Sets the instance's mid point to the desired mid point. This should not be called because it can make things slower and also make calculations inaccurate. It is best to leave the mid point of an instance at (0, 0, 0).</desc>
+<example>
+MDInstance* inst = //...
+// Set the mid point to (0, 0, 0)
+[ inst setMidPoint:MDVector3Create(0, 0, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/midPoint.txt</path>
+		<name>- (MDVector3) midPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

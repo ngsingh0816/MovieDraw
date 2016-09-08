@@ -1,0 +1,29 @@
+<name>action</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>SEL</type>
+		<desc>The GLWindow's action.</desc>
+	</return>
+</type>
+<desc>This function returns the action that was specified by setAction. The default value is nil.</desc>
+<example>
+GLWindow* window = //...
+[ window setTarget:self ];
+[ window setAction:@selector(frameEnded:) ];
+SEL act = [ window action ];		// Returns @selector(frameEnded:)
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/setAction.txt</path>
+		<name>- (void) setAction:(SEL) act</name>
+	</entry2>
+</see>

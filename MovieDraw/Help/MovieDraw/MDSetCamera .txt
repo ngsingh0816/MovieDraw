@@ -1,0 +1,33 @@
+<name>MDSetCamera</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDCamera*</type>
+		<name>camera</name>
+		<desc>The camera to set the view to.</desc>
+	</argument0>
+</type>
+<desc>Sets the current camera.</desc>
+<example>
+// Sets the current camera
+MDCamera* camera = //...
+MDSetCamera(camera);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setCamera.txt</path>
+		<name>- (void) setCamera:(MDVector3)midPoint toLocation:(MDVector3)look rotation:(MDVector3)rot orientation:(float)orien</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/cameraMidPoint.txt</path>
+		<name>- (MDVector3) cameraMidPoint</name>
+	</entry2>
+</see>

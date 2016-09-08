@@ -1,0 +1,28 @@
+<name>scaleX</name>
+<type>property BOOL</type>
+<desc>Whether the object gets drawn or not.</desc>
+<example>
+MDObject* obj = //...
+// Get the value
+BOOL value = obj.shouldDraw;
+// Alternative
+BOOL value = [ obj shouldDraw ];
+// Set the value
+obj.shouldDraw = TRUE;
+// Alternative
+[ obj setShoulDraw:TRUE ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry2>
+</see>

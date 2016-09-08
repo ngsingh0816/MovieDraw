@@ -1,0 +1,35 @@
+<name>initWithMDLight</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDLight*</type>
+		<desc>The newly created MDLight object</desc>
+	</return>
+	<argument0>
+		<type>MDLight*</type>
+		<name>light</name>
+		<desc>The light to make a copy of</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a new instance of an MDLight that is a copy of the light supplied. A MDLight created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+MDLight* old = //...
+// Create an MDLight
+MDLight* obj = [ [ MDLight alloc ] initWithMDLight:old ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDLight/init.txt</path>
+		<name>- (MDLight*) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry2>
+</see>

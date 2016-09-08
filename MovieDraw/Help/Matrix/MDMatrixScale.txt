@@ -1,0 +1,47 @@
+<name>MDMatrixScale</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDMatrix*</type>
+		<name>matrix</name>
+		<desc>The matrix to use.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>x</name>
+		<desc>The scale multiplier in the x direction.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>y</name>
+		<desc>The scale multiplier in the y direction.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>z</name>
+		<desc>The scale multiplier in the z direction.</desc>
+	</argument3>
+</type>
+<desc>Scales a matrix by the specified amount. This scales all vectors transformed by this matrix and is similar to glScalef(). It is usually used for the model view matrix.</desc>
+<example>
+MDMatrix matrix = // ...
+MDMatrixScales(&matrix, 5, 1, 1);	// Scales everything to be 5 times wide
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDMatrix/MDMatrix.txt</path>
+		<name>MDMatrix</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDMatrixScale .txt</path>
+		<name>MDMatrixScale(MDMatrix* matrix, MDVector3 scale)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDMatrixTranslate .txt</path>
+		<name>MDMatrixTranslate(MDMatrix matrix1, MDVector3 translate)</name>
+	</entry2>
+</see>

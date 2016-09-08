@@ -1,0 +1,38 @@
+<name>MDOtherObjectNamed</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The MDCamera, MDLight, MDParticleEngine, or MDCurve that matches the specified parameters. If no object is found, this will return nil.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>The name of the other object you want to find.</desc>
+	</argument0>
+</type>
+<desc>Returns the first other object with that name. There should not be more than one object with the same name unless it is manually set. If you modify a MDLight's lightType, then you need to call MDRebuildShaders() for it to be updated accordingly.</desc>
+<example>
+// Gets the other object named "Camera"
+MDCamera* cam = MDOtherObjectNamed(@"Camera");
+// Check if the object exists and it is a MDCamera
+if (object && [ cam isKindOfClass:[ MDCamera class ] ])
+{
+	// It exists and is a camera, do something
+	DoSomething();
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

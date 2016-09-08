@@ -1,0 +1,40 @@
+<name>setKeyUpFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSEvent*)</type>
+		<name>keyF</name>
+		<desc>The function to set to. The event argument is the event that would normally be supplied with one of these functions.</desc>
+	</argument0>
+</type>
+<desc>Sets a user function that is called every time a key is released.</desc>
+<example>
+void function(NSEvent* event)
+{
+	// Does something if the W key is released
+	unsigned short key = [ [ event characters ] characterAtIndex:0 ];
+	if (key == 'w' || key == 'W')
+		DoSomething();
+}
+GLView* view = //...
+// Sets the function
+[ view setKeyUpFunction:function ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/reshape</path>
+		<name>- (void) reshape</name>
+	</entry2>
+</see>

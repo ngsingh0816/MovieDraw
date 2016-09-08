@@ -1,0 +1,35 @@
+<name>initWithTexture</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created texture</desc>
+	</return>
+	<argument0>
+		<type>MDTexture*</type>
+		<name>tex</name>
+		<desc>The texture to make a copy of</desc>
+	</argument0>
+</type>
+<desc>Creates a copy of a texture. A texture created by this method should be autoreleased or released when done.</desc>
+<example>
+MDTexture* tex1 = //...
+// Create texture
+MDTexture* texture = [ [ MDTexture alloc ] initWithTexture:tex1 ];
+// Cleanup
+[ texture release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDTexture/MDTextureType</path>
+		<name>MDTextureType</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/type.txt</path>
+		<name>type</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry2>
+</see>

@@ -1,0 +1,20 @@
+<name>MDVector3</name>
+<type>struct</type>
+<desc>A vector quantity with three components.</desc>
+<example>
+MDVector3 point = MDVector3Create(10, 5, 3);	// Creates the point (10, 5, 3)
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector3Create.txt</path>
+		<name>MDVector3Create(float x, float y, float z)</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector2/MDVector2.txt</path>
+		<name>MDVector2</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/MDVector4.txt</path>
+		<name>MDVector4</name>
+	</entry2>
+</see>

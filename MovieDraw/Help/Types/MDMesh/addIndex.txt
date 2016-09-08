@@ -1,0 +1,34 @@
+<name>addIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>index</name>
+		<desc>The index to add</desc>
+	</argument0>
+</type>
+<desc>Adds an index to the mesh. If you add an index after the scene has been loaded, you must call setupVBO on the mesh's instance.</desc>
+<example>
+MDMesh* mesh = //...
+[ mesh addIndex:2 ];
+// Setup the VBO
+[ [ mesh instance ] setupVBO ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDTexture/MDTexture.txt</path>
+		<name>MDTexture</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/setupVBO.txt</path>
+		<name>- (void) setupVBO</name>
+	</entry2>
+</see>

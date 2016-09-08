@@ -1,0 +1,28 @@
+<name>image</name>
+<type>property NSString*</type>
+<desc>The path to the image for a particle. Currently this has no effect.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+NSString* value = obj.image;
+// Alternative
+NSString* value = [ obj image ];
+// Set the value
+obj.image = [ NSString stringWithFormat:@"%@/Images/particle.jpg", [ [ NSBundle mainBundle ] resourcePath ] ];
+// Alternative
+[ obj setImage:[ NSString stringWithFormat:@"%@/Images/particle.jpg", [ [ NSBundle mainBundle ] resourcePath ] ] ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/oneShot.txt</path>
+		<name>oneShot</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

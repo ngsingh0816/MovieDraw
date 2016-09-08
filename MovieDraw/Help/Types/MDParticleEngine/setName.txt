@@ -1,0 +1,33 @@
+<name>setName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>Sets the particle engine's name.</desc>
+	</argument0>
+</type>
+<desc>Sets the particle engine's name.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Sets the particle engine's name to "Particles 1"
+[ obj setName:@"Particles 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/name.txt</path>
+		<name>- (NSString*) name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

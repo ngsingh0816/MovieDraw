@@ -1,0 +1,31 @@
+<name>init</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>id</type>
+		<desc>The newly created MDPoint object</desc>
+	</return>
+</type>
+<desc>Creates and returns a new instance of a MDPoint. A MDPoint created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+// Initializes a point at (3, 0, -2) with the normal (0, 1, 0)
+MDPoint* point = [ [ MDPoint alloc ] init ];
+[ point setPosition:MDVector3Create(3, 0, -2) ];
+[ point setNormal:MDVector3Create(0, 1, 0) ];
+// Cleanup
+[ point release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDPoint/initWithPoint.txt</path>
+		<name>- (id) initWithPoint:(MDPoint*)point</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDPoint/MDPoint.txt</path>
+		<name>MDPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

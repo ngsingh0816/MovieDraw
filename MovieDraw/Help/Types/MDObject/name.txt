@@ -1,0 +1,28 @@
+<name>name</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSString*</type>
+		<desc>Returns the object's name.</desc>
+	</return>
+</type>
+<desc>Returns the object's name.</desc>
+<example>
+MDObject* obj1 = //...
+// Gets object's name
+NSString* name = [ obj1 name ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/setName.txt</path>
+		<name>- (void) setName:(NSString*)name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

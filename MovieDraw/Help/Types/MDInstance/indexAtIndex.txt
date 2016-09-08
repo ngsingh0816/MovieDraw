@@ -1,0 +1,37 @@
+<name>indexAtIndex</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>unsigned int</type>
+		<desc>The index at that index</desc>
+	</return>
+	<argument0>
+		<type>unsigned long</type>
+		<name>index</type>
+		<desc>The index in the array of all of the mesh's indices combined.</desc>
+	</argument0>
+</type>
+<desc>Returns the index at the specified index. If the specified index is greater than the index array's size, an exception will be raised.</desc>
+<example>
+MDInstance* instance = //...
+// Checks if it has at least one index
+if ([ instance numberOfIndices ])
+{
+	// Gets the first index
+	unsigned int index = [ instance indexAtIndex:0 ];
+}
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/points.txt</path>
+		<name>- (NSMutableArray*) points</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name>MDInstance</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDInstance/numberOfIndices.txt</path>
+		<name>- (unsigned int) numberOfIndices</name>
+	</entry2>
+</see>

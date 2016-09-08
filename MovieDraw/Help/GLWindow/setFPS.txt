@@ -1,0 +1,34 @@
+<name>setFPS</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>fps</name>
+		<desc>The desired fps to set to.</desc>
+	</argument0>
+</type>
+<desc>This sets the desired fps to a specific value. It is desired because it is unknown whether or not he computer will be able to handle the precise number of frames per second. It also recalculates the updateGL timer so that it updates accordingly. The default value is 60</desc>
+<example>
+GLWindow* window = //...
+// Sets up the OpenGL view
+[ window setUpGLView ];
+[ window setFPS:30 ];	// 30 frames per second
+</example>
+<see>
+	<entry0>
+		<path>/GLWindow/updateGL.txt</path>
+		<name>- (void) updateGL</name>
+	</entry0>
+	<entry1>
+		<path>/GLWindow/GLWindow.txt</path>
+		<name>GLWindow</name>
+	</entry1>
+	<entry2>
+		<path>/GLWindow/FPS.txt</path>
+		<name>- (unsigned int) FPS</name>
+	</entry2>
+</see>

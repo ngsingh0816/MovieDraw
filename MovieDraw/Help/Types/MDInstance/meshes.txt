@@ -1,0 +1,28 @@
+<name>meshes</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>NSMutableArray*</type>
+		<desc>Returns a mutable array of the instance's meshes</desc>
+	</return>
+</type>
+<desc>Returns a mutable array containing MDMesh objects of the instance's meshes. If you modify the number of meshes (by adding or removing) or modify a mesh, you must call setupVBO for the changes to take effect.</desc>
+<example>
+MDInstance* inst = //...
+// Get the first mesh
+MDMesh* mesh = [ [ inst meshes ] objectAtIndex:0 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/setupVBO.txt</path>
+		<name>- (void) setupVBO</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/meshAtIndex.txt</path>
+		<name>- (void) meshAtIndex:(unsigned long)index</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

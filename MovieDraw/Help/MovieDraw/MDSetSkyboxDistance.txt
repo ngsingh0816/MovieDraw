@@ -1,0 +1,34 @@
+<name>MDSetSkyboxDistance</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>distance</name>
+		<desc>The new distance of the skybox.</desc>
+	</argument0>
+</type>
+<desc>Sets the distance of the skybox. A good distance is 100 so that it is never clipped by OpenGL, but then this sometimes causes the scene to be clipped if you get too close. After this is called, you must call updateSkybox for this change to take effect.</desc>
+<example>
+// Sets the distance to 100
+MDSetSkyboxDistance(100);
+// Update
+[ MDGLView() updateSkybox ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/updateSkybox.txt</path>
+		<name>- (void) updateSkybox</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

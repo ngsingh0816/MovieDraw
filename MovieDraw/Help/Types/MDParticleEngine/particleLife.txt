@@ -1,0 +1,28 @@
+<name>particleLife</name>
+<type>property unsigned long</type>
+<desc>The life of the particles in frames.</desc>
+<example>
+MDParticleEngine* obj = //...
+// Get the value
+unsigned long value = obj.particleLife;
+// Alternative
+unsigned long value = [ obj particleLife ];
+// Set the value
+obj.particleLife = 60;
+// Alternative
+[ obj setParticleLife:60 ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDParticleEngine/MDParticleEngine.txt</path>
+		<name>MDParticleEngine</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDParticleEngine/velocitiyType.txt</path>
+		<name>velocityType</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry2>
+</see>

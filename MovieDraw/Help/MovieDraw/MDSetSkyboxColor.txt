@@ -1,0 +1,32 @@
+<name>MDSetSkyboxColor</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>MDVector4</type>
+		<name>distance</name>
+		<desc>The new color of the skybox with the components (red, green, blue, alpha).</desc>
+	</argument0>
+</type>
+<desc>Sets the color of the skybox. A good color is (1, 1, 1, 1) so that you can see the original image. You do not need to call updateSkybox for this to take effect.</desc>
+<example>
+// Sets the color to red
+MDSetSkyboxColor(MDVector4Create(1, 0, 0, 1));
+</example>
+<see>
+	<entry0>
+		<path>/GLView/updateSkybox.txt</path>
+		<name>- (void) updateSkybox</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

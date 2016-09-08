@@ -1,0 +1,42 @@
+<name>MDRotateZ</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The rotated vector.</desc>
+	</return>
+	<argument0>
+		<type>MDVector3</type>
+		<name>point</name>
+		<desc>The original point to rotate</desc>
+	</argument0>
+	<argument1>
+		<type>MDVector3</type>
+		<name>around</name>
+		<desc>The point to rotate around</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>zrot</name>
+		<desc>The rotation around the z axis in degrees</desc>
+	</argument2>
+</type>
+<desc>Rotates a point around another point by the z axis.</desc>
+<example>
+// Rotates a point about the z axis
+MDVector3 point = MDRotateZ(MDVector3Create(5, 3, 0), MDVector3Create(0, 0, 0), 90);
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDRotate.txt</path>
+		<name>MDRotate(MDVector3 point, MDVector3 around, float xrot, float yrot, float zrot)</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

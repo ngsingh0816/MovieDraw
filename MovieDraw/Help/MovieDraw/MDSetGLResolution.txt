@@ -1,0 +1,32 @@
+<name>MDSetGLResolution</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSSize</type>
+		<name>resolution</name>
+		<desc>The new resolution to set.</desc>
+	</argument0>
+</type>
+<desc>Sets the GLView's and the GLWindow's resolution and updates the GLView.</desc>
+<example>
+// Set a 1920 x 1080 resolution
+MDSetGLResolution(NSMakeSize(1920, 1080));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDGLResolution.txt</path>
+		<name>MDGLResolution()</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

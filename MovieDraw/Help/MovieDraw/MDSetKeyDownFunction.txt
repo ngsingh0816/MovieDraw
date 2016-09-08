@@ -1,0 +1,42 @@
+<name>MDSetKeyDownFunction</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>void (*)(NSEvent*)</type>
+		<name>func</name>
+		<desc>The function to set it to. The event argument is a typical NSEvent event.</desc>
+	</argument0>
+</type>
+<desc>Sets the key down function to the one supplied. This function is called every time a new key is pressed down.</desc>
+<example>
+// Sets the function
+void function(NSEvent* event)
+{
+	// Check if 'W' was pressed
+	unsigned short key = [ [ event characters ] characterAtIndex:0 ];
+	if (key == 'w' || key == 'W')
+	{
+		// 'W' was pressed, do something
+		DoSomething();
+	}
+}
+MDSetKeyDownFunction(function);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setKeyDownFunction.txt</path>
+		<name>- (void) setKeyDownFunction:(void (*)(NSEvent*))keyF</name>
+	</entry0>
+	<entry1>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry1>
+	<entry2>
+		<path>/MovieDraw/MDSetDrawFunction.txt</path>
+		<name>MDSetDrawFunction(void (*func)())</name>
+	</entry2>
+</see>

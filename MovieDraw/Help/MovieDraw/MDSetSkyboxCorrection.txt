@@ -1,0 +1,34 @@
+<name>MDSetSkyboxCorrection</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>correction</name>
+		<desc>The new correction of the skybox.</desc>
+	</argument0>
+</type>
+<desc>Sets the correction of the skybox which enabled the skybox to be seamless. You probably will need to experiment with this value. After this is called, you must call updateSkybox for this change to take effect.</desc>
+<example>
+// Sets the correction to 0.0015
+MDSetSkyboxCorrection(0.0015);
+// Update
+[ MDGLView() updateSkybox ];
+</example>
+<see>
+	<entry0>
+		<path>/GLView/updateSkybox.txt</path>
+		<name>- (void) updateSkybox</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

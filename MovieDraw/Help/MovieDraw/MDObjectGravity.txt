@@ -1,0 +1,32 @@
+<name>MDObjectGravity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The gravity of the object.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose gravity will be returned.</desc>
+	</argument0>
+</type>
+<desc>Returns the object's custom gravity.</desc>
+<example>
+// Gets the gravity for the "One" object of "Ball"
+MDVector3 gravity = MDObjectGravity(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetObjectGravity.txt</path>
+		<name>MDSetObjectGravity(MDObject* obj, MDVector3 gravity)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,32 @@
+<name>MDLinearVelocity</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDVector3</type>
+		<desc>The linear velocity of the object.</desc>
+	</return>
+	<argument0>
+		<type>MDObject*</type>
+		<name>obj</name>
+		<desc>The object whose linear velocity will be returned.</desc>
+	</argument0>
+</type>
+<desc>Returns the object's linear (movement) velocity.</desc>
+<example>
+// Gets the linear velocity for the "One" object of "Ball"
+MDVector3 vel = MDLinearVelocity(MDObjectWithName(@"One", @"Ball"));
+</example>
+<see>
+	<entry0>
+		<path>/MovieDraw/MDSetLinearVelocity.txt</path>
+		<name>MDSetLinearVelocity(MDObject* obj, MDVector3 vel)</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDObject/MDObject.txt</path>
+		<name>MDObject</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

@@ -1,0 +1,28 @@
+<name>midPoint</name>
+<type>property MDVector3</type>
+<desc>The camera's position.</desc>
+<example>
+MDCamera* obj = //...
+// Get the value
+MDVector3 value = obj.midPoint;
+// Alternative
+MDVector3 value = [ obj midPoint ];
+// Set the value
+obj.midPoint = MDVector3Create(0, 1, 0);
+// Alternative
+[ obj setMidPoint:MDVector3Create(0, 1, 0) ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/lookPoint.txt</path>
+		<name>lookPoint</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>

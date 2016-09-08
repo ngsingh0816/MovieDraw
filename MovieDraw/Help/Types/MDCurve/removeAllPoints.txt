@@ -1,0 +1,28 @@
+<name>removeAllPoints</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+</type>
+<desc>Removes all the points from the curve.</desc>
+<example>
+MDCurve* obj = //...
+// Remove all the points
+[ obj removeAllPoints ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCurve/MDCurve.txt</path>
+		<name>MDCurve</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCurve/setPoints.txt</path>
+		<name>- (void) setPoints:(std::vector<MDVector3>)p</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry2>
+</see>

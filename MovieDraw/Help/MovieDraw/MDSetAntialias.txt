@@ -1,0 +1,32 @@
+<name>MDSetAntialias</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>unsigned int</type>
+		<name>antialias</name>
+		<desc>The number of samples of MSAA antialiasing to do.</desc>
+	</argument0>
+</type>
+<desc>Sets the number of samples of MSAA antialiasing to do (1x, 2x, 4x, 8x, 16x). The default value is 16.</desc>
+<example>
+// Sets 8x antialiasing
+MDSetAntialias(8);
+</example>
+<see>
+	<entry0>
+		<path>/GLView/setAntialias.txt</path>
+		<name>- (void) setAntialias: (unsigned int)anti</name>
+	</entry0>
+	<entry1>
+		<path>/MovieDraw/MDGLWindow.txt</path>
+		<name>MDGLWindow()</name>
+	</entry1>
+	<entry2>
+		<path>/GLView/GLView.txt</path>
+		<name>GLView</name>
+	</entry2>
+</see>

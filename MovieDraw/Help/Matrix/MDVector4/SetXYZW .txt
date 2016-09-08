@@ -1,0 +1,48 @@
+<name>SetXYZW</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</type>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>float</type>
+		<name>xVal</name>
+		<desc>The new x component.</desc>
+	</argument0>
+	<argument1>
+		<type>float</type>
+		<name>yVal</name>
+		<desc>The new y component.</desc>
+	</argument1>
+	<argument2>
+		<type>float</type>
+		<name>zVal</name>
+		<desc>The new z component.</desc>
+	</argument2>
+	<argument3>
+		<type>float</type>
+		<name>wVal</name>
+		<desc>The new w component.</desc>
+	</argument3>
+</type>
+<desc>Sets the x, y, z, and w components of the vector.</desc>
+<example>
+MDVector4 vector = MDVector4Create(5, 0, 1, 2);
+vector.SetXYZW(3, 4, 2, 6);
+if (vector.GetX() == 3.0 && vector.GetY() == 4.0 && vector.GetZ() == 2.0 && vector.GetW() == 2.0)	// Returns TRUE
+</example>
+<see>
+	<entry0>
+		<path>/Matrix/MDVector4/GetX.txt</path>
+		<name>GetX()</name>
+	</entry0>
+	<entry1>
+		<path>/Matrix/MDVector4/SetY.txt</path>
+		<name>SetY(float yVal)</name>
+	</entry1>
+	<entry2>
+		<path>/Matrix/MDVector4/SetXYZW.txt</path>
+		<name>SetXYZW(MDVector4 p)</name>
+	</entry2>
+</see>

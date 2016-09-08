@@ -1,0 +1,33 @@
+<name>setName</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>void</name>
+		<desc>No description available.</desc>
+	</return>
+	<argument0>
+		<type>NSString*</type>
+		<name>name</name>
+		<desc>Sets the instance's name.</desc>
+	</argument0>
+</type>
+<desc>Sets the instance's name.</desc>
+<example>
+MDInstance* inst = //...
+// Sets the instance's name to "Instance 1"
+[ inst setName:@"Instance 1" ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDInstance/MDInstance.txt</path>
+		<name> MDInstance </name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDInstance/name.txt</path>
+		<name>- (NSString*) name</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDMesh/MDMesh.txt</path>
+		<name>MDMesh</name>
+	</entry2>
+</see>

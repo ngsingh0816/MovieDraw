@@ -1,0 +1,35 @@
+<name>initWithMDCamera</name>
+<type>
+	<name>Function</name>
+	<return>
+		<type>MDCamera*</type>
+		<desc>The newly created MDCamera object</desc>
+	</return>
+	<argument0>
+		<type>MDCamera*</type>
+		<name>cam</name>
+		<desc>The camera to make a copy of</desc>
+	</argument0>
+</type>
+<desc>Creates and returns a new instance of an MDCamera that is a copy of the camera supplied. A MDCamera created by this method should either be autoreleased or released when not needed anymore.</desc>
+<example>
+MDCamera* old = //...
+// Create an MDCamera
+MDCamera* obj = [ [ MDCamera alloc ] initWithMDCamera:old ];
+// Cleanup
+[ obj release ];
+</example>
+<see>
+	<entry0>
+		<path>/Types/MDCamera/init.txt</path>
+		<name>- (MDCamera*) init</name>
+	</entry0>
+	<entry1>
+		<path>/Types/MDCamera/MDCamera.txt</path>
+		<name>MDCamera</name>
+	</entry1>
+	<entry2>
+		<path>/Types/MDLight/MDLight.txt</path>
+		<name>MDLight</name>
+	</entry2>
+</see>
